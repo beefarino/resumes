@@ -1,0 +1,419 @@
+{
+  "basics": {
+    "name": "James Christopher",
+    "label": "Data, Analytics, Software, and Technology",
+    "picture": "https://mvp.microsoft.com/en-us/PublicProfile/Photo/4032573",
+    "email": "jim.christopher@gmail.com",
+    "phone": "980.322.9231",
+    "website": "http://beefycode.com",
+    "summary": "Forward-thinking software and data engineer with 22 years of professional experience across highly-regulated industries including commercial software, defense, and education.  Excellent written and verbal communication skills.  Adept research and analytical skills.  Award-winning teacher and avid speaker.  Seven-time Microsoft MVP.  Small business owner.",
+    "location": {
+      "address": "2104 Mondo Ln",
+      "postalCode": "NC 28079",
+      "city": "Indian Trail",
+      "countryCode": "US",
+      "region": "North Carolina"
+    },
+    "profiles": [
+      {
+        "network": "github",
+        "username": "beefarino",
+        "url": "https://github.com/beefarino"
+      },
+      {
+        "network": "Twitter",
+        "username": "beefarino",
+        "url": "https://twitter.com/beefarino"
+      },
+      {
+        "network": "LinkedIn",
+        "username": "jim-christopher",
+        "url": "https://www.linkedin.com/in/jim-christopher-3344462"
+      }
+    ]
+  },
+  "work": [
+    {
+      "company": "Pluralsight",
+      "position": "Director of Curriculum",
+      "website": "https://www.pluralsight.com",
+      "startDate": "2014-11-01",
+      "endDate": "",
+      "summary": "Forecast Data Professional library needs and identify authors appropriate to fill these needs. Curate course proposals and author auditions. Resolving quality and technical issues in course content. Mentoring course authors to improve the learning experience from their courses. Develop curriculum for general learning, certifications, and customer-specific training requirements.",
+      "highlights": [
+        "Directed the planning and guided operations for the most cost-effective segment of the Pluralsight content library.",
+        "Increased data author NPS by 7%, reduced time to data course production by 17%, and increased throughput of author contracts by 22% through tractible data-driven processes of curriculum planning.",
+        "Developed systems to support data-driven role and skill planning, including application of natural language processing and machine learning.",
+        "Developed in-house data literacy curriculum for Content teams."
+      ]
+    },
+    {
+      "company": "Yarn, Hooks, & Love Silly LLC",
+      "position": "Crafter & Proprieter",
+      "website": "https://www.etsy.com/shop/YarnHooksNLoveSilly",
+      "startDate": "2017-03-01",
+      "endDate": "",
+      "summary": "Design and sales of custom crochet pieces that incorporate electronics, programming, and mathematics.",
+      "highlights": [
+        "Developed software to reproduce images as filet and colorwork crochet patterns."
+      ]
+    },
+    {
+      "company": "Code Owls, LLC",
+      "position": "Owner",
+      "website": "",
+      "startDate": "2009-06-01",
+      "endDate": "",
+      "summary": "Provide contracted software engineering, data engineering, and project management services across highly regulated industries, including gaming, defense, and education.",
+      "highlights": [
+        "Reduced expenses of a large school district by 1.2 million dollars by implementing a cloud-based answer sheet processing system, allowing the district to use inexpensive commodity scanners instead of expensive proprietary scanners.",
+        "Developed the open source p2f framework, which Microsoft now includes as part of the code base for PowerShell and Azure Cloud Shell. (https://github.com/PowerShell/SHiPS/blob/development/docs/Design.md)"
+      ]
+    },
+    {
+      "company": "PokerTek, Inc",
+      "position": "Senior Software Engineer",
+      "website": "http://pokertek.com",
+      "startDate": "2005-09-01",
+      "endDate": "2010-02-01",
+      "summary": "Implement software and services to support automated poker tables and rooms. Research and development. Acting SCM, build master, and Scrum master.",
+      "highlights": [
+        "Reduced time and cost of regulatory approval cycles through implementation of data-driven documentation and static code analysis systems.",
+        "Implemented enterprise-wide application security and file integrity systems, including line-of-sight and monitoring of real-time status.",
+        "Increased automated functional testing coverage to 80% of observed human behavior by developing a domain-specific language for describing poker room activity."
+      ]
+    },
+    {
+      "company": "LearningStation, Inc",
+      "position": "Senior Integration Engineer",
+      "website": "",
+      "startDate": "2002-07-01",
+      "endDate": "2005-09-01",
+      "summary": "Integrate systems across various education platforms and architectures. Develop SAML-based federated identity service.",
+      "highlights": [
+        "Reduced support incidents by 37% by implementing an audit system to log changes to key database entities.",
+        "Implemented line-of-sight into data integration systems to support SLAs with external vendors."
+      ]
+    },
+    {
+      "company": "Convey Systems, Inc",
+      "position": "Software Developer",
+      "website": "",
+      "startDate": "2000-12-01",
+      "endDate": "2002-07-01",
+      "summary": "Develop browser-based communication and collaboration software.",
+      "highlights": [
+        "Increased developer productivity by an average of 4.2 hours a week by automating software component documentation efforts.",
+        "Reduced response time for support incidents by 15 minutes through centralized real-time logging of field incidents."
+      ]
+    },
+    {
+      "company": "Breault Research Organization",
+      "position": "Windows & Internet Software Developer",
+      "website": "http://bro.com",
+      "startDate": "1997-12-01",
+      "endDate": "2000-01-01",
+      "summary": "Develop Internet-aware application components to support industry-leading optical engineering software.",
+      "highlights": [
+        "Increased support team indicent processing capacity by 26% using Internet-enabled application support modules.",
+        "Increased website traffic by 112% though the application of data-driven behavioral techniques.",
+        "Maintained Secret clearance."
+      ]
+    }
+  ],
+  "volunteer": [
+    {
+      "organization": "Charlotte-Mecklenburg Schools",
+      "position": "Volunteer",
+      "website": "https://www.wearecms.com/",
+      "startDate": "2008-08-01",
+      "endDate": "",
+      "summary": "Provide teaching assistance, in-class mentoring, technology application, and fundraising",
+      "highlights": [
+      ]
+    },
+    {
+      "organization": "Habitat for Humanity",
+      "position": "Carpenter, Framer",
+      "website": "https://www.habitat.org/",
+      "startDate": "2012-01-01",
+      "endDate": "",
+      "summary": "Build houses for families in need.",
+      "highlights": [
+      ]
+    },
+    {
+      "organization": "Charlotte PowerShell Users Group",
+      "position": "Organizer",
+      "website": "https://www.meetup.com/Charlotte-PowerShell-Users-Group/",
+      "startDate": "2008-01-01",
+      "endDate": "",
+      "summary": "Fund and organize local PowerShell user group activities.",
+      "highlights": [
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "University of Arizona",
+      "area": "Cognitive Psychology",
+      "studyType": "Masters",
+      "startDate": "1995-08-01",
+      "endDate": "1997-12-01",
+      "gpa": "4.0",
+      "courses": [
+      ]
+    },
+    {
+      "institution": "Trinity University",
+      "area": "Psychology",
+      "studyType": "Bachelors",
+      "startDate": "1991-08-01",
+      "endDate": "1995-05-01",
+      "gpa": "3.7",
+      "courses": [
+      ]
+    }
+  ],
+  "awards": [
+    {
+      "title": "MVP, PowerShell",
+      "date": "2011-04-01",
+      "awarder": "Microsoft",
+      "summary": "Seven year PowerShell MVP."
+    },
+    {
+      "title": "Finalist, Blue Diamond Technology Award",
+      "date": "2002-05-01",
+      "awarder": "Charlotte Chamber of Commerce",
+      "summary": "Finalist for Technology Innovation Award."
+    },
+    {
+      "title": "Favorite Faculty Member",
+      "date": "1997-11-01",
+      "awarder": "University of Arizona",
+      "summary": "Student-selected recognition of outstanding faculty members."
+    }
+  ],
+  "publications": [
+    {
+      "name": "Application Instrumentation using Windows Performance Counters",
+      "publisher": "Pluralsight",
+      "releaseDate": "2015-01-26",
+      "website": "https://app.pluralsight.com/library/courses/application-instrumentation-using-performance-counters",
+      "summary": "Course providing deep insight into using performance counters to instrument custom Windows applications."
+    },
+    {
+      "name": "Application Instrumentation using log4net",
+      "publisher": "Pluralsight",
+      "releaseDate": "2013-08-28",
+      "website": "https://app.pluralsight.com/library/courses/application-instrumentation-log4net",
+      "summary": "Course providing deep insight into using log4net to instrument custom applications."
+    },
+    {
+      "name": "PowerShell Gotchas",
+      "publisher": "Pluralsight",
+      "releaseDate": "2013-10-27",
+      "website": "https://app.pluralsight.com/library/courses/powershell-gotchas",
+      "summary": "Course covering some of the more frustrating patterns in PowerShell."
+    },
+    {
+      "name": "Everyday PowerShell for Developers",
+      "publisher": "Pluralsight",
+      "releaseDate": "2012-11-29",
+      "website": "https://app.pluralsight.com/library/courses/everyday-ps",
+      "summary": "Course on using PowerShell for common developer tasks."
+    },
+    {
+      "name": "PowerShell Deep Dives",
+      "publisher": "Manning",
+      "releaseDate": "2013-07-01",
+      "website": "https://www.manning.com/books/powershell-deep-dives",
+      "summary": "Authored chapter on the psake build system."
+    },
+    {
+      "name": "Replacing Institutional Knowledge with Artificial Intelligence so I can Take a Damned Vacation",
+      "publisher": "SQL Saturday #652",
+      "releaseDate": "2017-05-15",
+      "website": "",
+      "summary": "Conference talk providing insights into leveraging machine learning to augment human processes."
+    },
+    {
+      "name": "Automating SSIS Package Development and Management with BIPS",
+      "publisher": "SQL Saturday ",
+      "releaseDate": "2015-12-01",
+      "website": "",
+      "summary": "Conference presentation on the BIPS open source project."
+    },
+    {
+      "name": "Data Engineering and Automation with PowerShell",
+      "publisher": "Florida Virtual PowerShell Users Group",
+      "releaseDate": "2013-04-01",
+      "website": "",
+      "summary": "Conference talk on the EntityShell open source data ORM project."
+    },
+    {
+      "name": "Fun with Lilypad!",
+      "publisher": "MADExpo",
+      "releaseDate": "2012-06-01",
+      "website": "",
+      "summary": "Conference talk providing an overview of building hobby systems with Lilypad GPIO boards."
+    },
+    {
+      "name": "Raising the Next Generation of Thinkers and Tinkers",
+      "publisher": "CodeStock",
+      "releaseDate": "2012-06-01",
+      "website": "",
+      "summary": "Conference workshop for parents on raising thinkers and tinkers."
+    },
+    {
+      "name": "Data Visualization with PowerShell",
+      "publisher": "ALT.NET Charlotte",
+      "releaseDate": "2012-01-01",
+      "website": "",
+      "summary": "Conference talk on the SeeShell open source data visualization project."
+    },
+    {
+      "name": "Stupid PowerShell Tricks",
+      "publisher": "SQL Saturday #89",
+      "releaseDate": "2011-09-01",
+      "website": "",
+      "summary": "Conference talk focused on fun and useless PowerShell activities."
+    },
+    {
+      "name": "Automating Visual Studio with StudioShell",
+      "publisher": "DEVLink",
+      "releaseDate": "2011-08-01",
+      "website": "",
+      "summary": "Conference presentation on the StudioShell open source project."
+    },
+    {
+      "name": "PowerShell for Developers",
+      "publisher": "Atlanta Code Camp",
+      "releaseDate": "2011-06-01",
+      "website": "",
+      "summary": "Conference talk providing insights into using PowerShell as part of a developer workflow."
+    },
+    {
+      "name": "Getting Started with Arduino",
+      "publisher": "CodeStock",
+      "releaseDate": "2010-06-01",
+      "website": "",
+      "summary": "Conference talk providing an overview of building hobby systems with Arduino GPIO boards."
+    },
+    {
+      "name": "Distributed Version Control with Mercurial and Git",
+      "publisher": "ALT.NET Charlotte",
+      "releaseDate": "2010-05-01",
+      "website": "",
+      "summary": "Conference talk detailing common patterns and practices in distributed version control."
+    },
+    {
+      "name": "PowerShell as a Tools Platform",
+      "publisher": "Richmond Code Camp",
+      "releaseDate": "2010-11-01",
+      "website": "",
+      "summary": "Conference talk outlining the case for using PowerShell as a platform for application tooling."
+    },
+    {
+      "name": "Extending the Windows Scripting Environment",
+      "publisher": "Windows Developer's Journal",
+      "releaseDate": "2001-11-01",
+      "website": "",
+      "summary": "Magazine article outlining how to extend the windows scripting environment with custom objects."
+    }
+  ],
+  "skills": [
+    {
+      "name": "Data Analytics",
+      "level": "Intermediate",
+      "keywords": [
+        "Python",
+        "SQL",
+        "pandas",
+        "notebooks",
+        "statistics",
+        "scikit-learn",
+        "NLTK",
+        "spaCy",
+        "D3"
+      ]
+    },
+    {
+      "name": "Data Engineering",
+      "level": "Intermediate",
+      "keywords": [
+        "PostgreSQL",
+        "SQL Server",
+        "MariaDB",
+        "MongoDB",
+        "neo4j",
+        "SQL",
+        "Cypher"
+      ]
+    },
+    {
+      "name": "Software Development",
+      "level": "Expert",
+      "keywords": [
+        "Python",
+        "SQL",
+        "C#",
+        "C++",
+        "Javascript",
+        "git"
+      ]
+    },
+    {
+      "name": "Web Development",
+      "level": "Intermediate",
+      "keywords": [
+        "HTML",
+        "CSS",
+        "Javascript",
+        "D3"
+      ]
+    },
+    {
+      "name": "Scripting & Automation",
+      "level": "Expert",
+      "keywords": [
+        "PowerShell",
+        "Python",
+        "Javascript",
+        "Automation Design",
+        "API Design and Development"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "language": "English",
+      "fluency": "Native speaker"
+    }
+  ],
+  "interests": [
+    {
+      "name": "Tiny Houses",
+      "keywords": [
+        "construction","off-grid living"
+      ]
+    },
+    {
+      "name": "Fiction Writing",
+      "keywords": [
+        "novels"
+      ]
+    },
+    {
+      "name": "Music",
+      "keywords": [
+        "guitar","ukelele","live concerts"
+      ]
+    }
+
+  ],
+  "references": [
+
+  ]
+}
