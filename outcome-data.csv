@@ -1,0 +1,12 @@
+Company,Date,From,To,delta,percent,direction,Units,Highlight
+Code Owls LLC,6/1/2009,"33,600,000.00","32,750,000.00","850,000.00",2.53,-1.00,Dollars Spent on Testing,"Reduced expenses of a large school district by $850,000 dollars by implementing a cloud-based answer sheet processing system, allowing the district to use inexpensive commodity scanners instead of expensive proprietary scanners."
+Pluralsight,11/1/2014,7.8,9.5,1.70,21.79,1.00,Days to SOW,Decreased time to SOW by 22%
+Pluralsight,11/1/2014,8.4,9.1,0.70,8.33,1.00,Author NPS,Increased data author NPS by 8%
+Pluralsight,11/1/2014,100,122,22.00,22.00,1.00,Number of Courses Commissioned,Increased number of courses commissioned by 22%
+Pluralsight,11/1/2014,15,7.8,7.20,48.00,-1.00,Predictibility of Time Authors Spend in Proposal,Reduced variance in times authors spend building course proposals by 48%
+PokerTek,2/1/2010,0,78,78.00,78.00,1.00,Automated functional testing coverage,Increased automated functional testing coverage to 80% of observed human behavior by developing a domain-specific language for describing poker room activity.
+LearningStation,9/1/2005,66.66666667,42,24.67,37,-1.00,Support Indicents per Month,Reduced support incidents by 37% by implementing an audit system to log changes to key database entities.
+Convey Systems,7/1/2002,35,20,15,42.86,-1.00,Time to Resolved Support Incident,Reduced response time for support incidents by 15 minutes through centralized real-time logging of field incidents.
+Convey Systems,7/1/2002,5.3,1.1,4.2,79.25,-1.00,Hours on Documentation,Reduced time spent on documentation efforts by 80% by automating component API documentation
+Breault Research Organization,1/1/2000,12,16.21621622,4.22,26,1.00,Support Indicents Resolved per Day,Increased support team indicent processing capacity by 26% using Internet-enabled application support modules.
+Breault Research Organization,1/1/2000,312,666.5454545,354.55,112,1.00,Monthly Website Visitors,Increased website traffic by 112% though the application of data-driven behavioral techniques.

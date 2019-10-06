@@ -1,0 +1,36 @@
+{
+  "name": "resumes",
+  "version": "1.0.0",
+  "description": "Jim's resumes",
+  "main": "index.js",
+  "dependencies": {
+    "jsonresume-theme-boilerplate": "^0.1.2",
+    "jsonresume-theme-bootstrap-icons": "^0.2.1",
+    "jsonresume-theme-crisp": "^0.2.12",
+    "jsonresume-theme-elegant": "^1.12.1",
+    "jsonresume-theme-genocation": "^0.1.0",
+    "jsonresume-theme-kendall": "^0.1.19",
+    "jsonresume-theme-kwan": "^0.0.2",
+    "jsonresume-theme-markdown": "^1.0.2",
+    "jsonresume-theme-material": "^1.1.2",
+    "jsonresume-theme-short": "^0.1.7",
+    "jsonresume-theme-simple": "^1.0.0",
+    "jsonresume-theme-smart": "^1.0.2",
+    "jsonresume-theme-stackoverflow": "^1.4.0",
+    "resume-cli": "^1.2.7"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/beefarino/resumes.git"
+  },
+  "author": "Jim Christopher",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/beefarino/resumes/issues"
+  },
+  "homepage": "https://github.com/beefarino/resumes#readme"
+}
