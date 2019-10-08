@@ -1,0 +1,305 @@
+<!doctype html>
+<html>
+	<head>
+  	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, user-scalable=no, minimal-ui">
+  	<title>{{#resume.basics}}{{name}}{{/resume.basics}}</title>
+    <link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <style>
+  	{{{css}}}
+  	</style>
+	</head>
+	<body>
+    <div class="top">
+      <div class="container">
+        {{#resume.basics}}
+        <div class="profile-pic" style="background-image: url({{picture}})"></div>
+        <div class="name-title">
+          <div class="name">{{name}}</div>
+          <div class="job-title">{{label}}</div>
+        </div>
+      </div>
+    </div>
+    <div class="clearfix"></div>
+    <div class="container">
+
+      {{#if summary}}
+        <div class="bio">{{summary}}</div>
+      {{/if}}
+
+      <div class="profiles">
+        {{#if profiles.length}}
+        <div class="heading">Profiles</div>
+        {{#each profiles}}
+          <div>
+            <span class="label fa fa-{{network}}"></span>
+              <span class="data">
+              <span class="website"><a href="{{url}}">{{url}}</a></span>
+            </span>
+          </div>
+        {{/each}}
+        {{/if}}
+      </div>
+
+      <div class="contact">
+        <div class="heading">Contact</div>
+
+        {{#if website}}
+        <div><span class="label">Website</span><span class="data"><a href="{{website}}">{{website}}</a></span></div>
+        {{/if}}
+
+        {{#if email}}
+        <div><span class="label">Email</span><span class="data"><a href="mailto:{{email}}">{{email}}</a></span></div>
+        {{/if}}
+
+        {{#if phone}}
+        <div><span class="label">Phone</span><span class="data"><a href="tel:{{phone}}">{{phone}}</a></span></div>
+        {{/if}}
+
+      </div>
+
+      <div class="clearfix"></div>
+      {{/resume.basics}}
+
+
+      {{#if resume.work.length}}
+      <div id="work" class="">
+        <div class="heading">Experience</div>
+        {{#each resume.work}}
+        <div class="item">
+          <div class="overview">
+
+            <div class="details">
+              {{#if company}}
+              <div class="label">
+                {{company}}
+                {{#if website}}
+                <span class="website"><a href="{{website}}">{{website}}</a></span>
+                {{/if}}
+              </div>
+              {{/if}}
+              <div class="date">
+                {{#if startDate}}
+                <span class="startDate">
+                  {{startDate}}
+                </span>
+                {{/if}}
+                {{#if endDate}}
+                <span class="endDate">
+                  - {{endDate}}
+                </span>
+                {{else}}
+                <span class="endDate">
+                  - Present
+                </span>
+                {{/if}}
+              </div>
+              {{#if position}}
+              <div class="position">
+                {{position}}
+              </div>
+              {{/if}}
+
+            </div>
+            {{#if summary}}
+            <div class="summary">{{summary}}</div>
+            {{/if}}
+          </div>
+          {{#if highlights.length}}
+            <div class="highlights">
+            <span class="label">Highlights</span>
+              <ul>
+                {{#each highlights}}
+                <li>{{.}}</li>
+                {{/each}}
+              </ul>
+            </div>
+          {{/if}}
+          <div class="clearfix"></div>
+        </div>
+        {{/each}}
+      </div>
+      {{/if}}
+
+      {{#if resume.volunteer.length}}
+      <div id="volunteer">
+        <div class="heading">Volunteer</div>
+        {{#each resume.volunteer}}
+        <div class="item">
+          <div class="overview">
+            <div class="details">
+              {{#if organization}}
+              <div class="label">
+                {{organization}}
+                {{#if website}}
+                <span class="website"><a href="{{website}}">{{website}}</a></span>
+                {{/if}}
+              </div>
+              {{/if}}
+              <div class="date">
+                {{#if startDate}}
+                <span class="startDate">
+                  {{startDate}}
+                </span>
+                {{/if}}
+                {{#if endDate}}
+                <span class="endDate">
+                  - {{endDate}}
+                </span>
+                {{else}}
+                <span class="endDate">
+                  - Present
+                </span>
+                {{/if}}
+              </div>
+              {{#if position}}
+              <div class="position">
+                {{position}}
+              </div>
+              {{/if}}
+
+            </div>
+            {{#if summary}}
+            <div class="summary">{{summary}}</div>
+            {{/if}}
+          </div>
+          {{#if highlights.length}}
+            <div class="highlights">
+            <span class="label">Highlights</span>
+              <ul>
+                {{#each highlights}}
+                <li>{{.}}</li>
+                {{/each}}
+              </ul>
+            </div>
+          {{/if}}
+          <div class="clearfix"></div>
+        </div>
+        {{/each}}
+      </div>
+      {{/if}}
+
+      {{#if resume.education.length}}
+      <div class="education" class="">
+        <div class="heading">Education</div>
+          {{#each resume.education}}
+          <div class="item">
+            {{#if institution}}
+            <div class="institution">
+              <span class="label">{{institution}}</span>
+              {{#if area}}
+                <span class="area">
+                   - {{area}}
+                </span>
+              {{/if}}
+            </div>
+            {{/if}}
+
+            {{#if studyType}}
+            <div class="studyType">
+              {{studyType}}
+            </div>
+            {{/if}}
+            <div class="date">
+              {{#if startDate}}
+              <span class="startDate">
+                {{startDate}}
+              </span>
+              {{/if}}
+              {{#if endDate}}
+              <span class="endDate">
+                - {{endDate}}
+              </span>
+              {{else}}
+              <span class="endDate">
+                - Present
+              </span>
+              {{/if}}
+            </div>
+
+            {{#if gpa}}
+            <div class="gpa">
+              GPA: {{gpa}}
+            </div>
+            {{/if}}
+            {{#if courses.length}}
+            <ul class="courses">
+              {{#each courses}}
+              <li>{{.}}</li>
+              {{/each}}
+            </ul>
+            {{/if}}
+          </div>
+          {{/each}}
+      </div>
+      <div class="clearfix"></div>
+      {{/if}}
+
+      {{#if resume.skills.length}}
+      <div class="skills" class="">
+        <div class="heading">Skills</div>
+        {{#each resume.skills}}
+        <div class="item">
+          {{#if name}}
+          <div class="label">
+            {{name}}
+            {{#if level}}
+            <span class="level">({{level}})</span>
+            {{/if}}
+          </div>
+          {{/if}}
+          {{#if keywords.length}}
+          <ul class="keywords">
+            {{#each keywords}}
+            <li>{{.}}</li>
+            {{/each}}
+          </ul>
+          {{/if}}
+        </div>
+        {{/each}}
+      </div>
+      {{/if}}
+
+      {{#if resume.interests.length}}
+      <div class="interests" class="">
+        <div class="heading">Interests</div>
+        {{#each resume.interests}}
+        <div class="item">
+          {{#if name}}
+          <div class="label">
+            {{name}}
+          </div>
+          {{/if}}
+          {{#if keywords.length}}
+          <ul class="keywords">
+            {{#each keywords}}
+            <li>{{.}}</li>
+            {{/each}}
+          </ul>
+          {{/if}}
+        </div>
+        {{/each}}
+      </div>
+      {{/if}}
+
+      {{#if resume.references.length}}
+      <div class="references" class="">
+        <div class="heading">References</div>
+        {{#each resume.references}}
+        <div class="item">
+          {{#if reference}}
+          <blockquote class="reference">{{reference}}</blockquote>
+          {{/if}}
+          {{#if name}}
+           <div class="">{{name}}</div>
+          {{/if}}
+        </div>
+        {{/each}}
+      </div>
+      {{/if}}
+      <div class="clearfix"></div>
+    </div>
+    <div class="footer"></div>
+
+  </body>
+</html>

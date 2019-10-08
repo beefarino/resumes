@@ -1,0 +1,1127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Jim Christopher</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,500,600,700|Open+Sans:400,500,600,700' rel='stylesheet' type='text/css'>
+    <style>
+      .clear-margin {
+  margin: 0;
+}
+.space-top {
+  margin-top: 10px;
+}
+.space-right {
+  margin-right: 10px;
+}
+.icon-left {
+  margin-right: 5px;
+}
+.icon-right {
+  margin-left: 5px;
+}
+.labels {
+  word-spacing: 5px;
+  line-height: 2;
+}
+.label-keyword {
+  display: inline-block;
+  background: #7eb0db;
+  color: white;
+  font-size: 0.9em;
+  padding: 5px;
+  border: 1px solid #357ebd;
+}
+.link-disguise {
+  color: inherit;
+}
+.link-disguise:hover {
+  color: inherit;
+}
+@media (max-width: 992px) {
+  .clear-margin-sm {
+    margin-bottom: 0;
+  }
+}
+body {
+  font-family: 'Lato', "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background: #f0f0f0;
+  color: #333333;
+  font-size: 16px;
+}
+.text-bolder {
+  font-weight: bold;
+}
+@media only screen {
+  .container {
+    max-width: 50em;
+  }
+}
+@media (max-width: 480px) {
+  ul {
+    padding-left: 25px;
+  }
+  /*
+        .mobile-title {
+            display: inline-block;
+            margin-left: 5px;
+            font-weight: bold;
+            text-transform: uppercase;
+            vertical-align: middle;
+        }
+*/
+  .background-details {
+    display: block;
+  }
+  .background-details .icon {
+    max-width: inherit;
+    min-width: inherit;
+    text-align: left;
+  }
+  .background-details .icon,
+  .background-details .info {
+    display: block;
+    padding: 10px 0;
+  }
+  .background-details .title {
+    display: none;
+  }
+  .card-nested {
+    padding: 5px 0;
+  }
+}
+.profile-card {
+  display: table;
+  width: 100%;
+}
+.profile-pic {
+  display: table-cell;
+  vertical-align: top;
+  padding: 1rem 4rem 0 0 ;
+}
+.profile-pic img {
+  width: 100px;
+  height: 100px;
+}
+.contact-details {
+  display: table-cell;
+}
+.contact-details .detail {
+  display: inline-block;
+  line-height: 2;
+  margin-right: 2rem;
+}
+.contact-details .detail .icon {
+  padding-right: 7px;
+  color: #888;
+}
+.contact-details .detail .info {
+  font-size: 0.8em;
+}
+.social-links {
+  line-height: 2.5;
+}
+.social-link {
+  display: block;
+}
+.social-link span {
+  display: inline-block;
+  vertical-align: middle;
+}
+.social-link:hover,
+.social-link:focus {
+  text-decoration: none;
+}
+.social-link .fa {
+  text-align: center;
+  width: 2em;
+}
+.fa-github {
+  color: #454545;
+}
+.fa-github:hover,
+.fa-github:focus {
+  text-decoration: none;
+  color: #2b2b2b;
+}
+.fa-twitter {
+  color: #33ccff;
+}
+.fa-twitter:hover,
+.fa-twitter:focus {
+  text-decoration: none;
+  color: #00bfff;
+}
+.fa-rss {
+  color: #f36f24;
+}
+.fa-rss:hover,
+.fa-rss:focus {
+  text-decoration: none;
+  color: #d8560c;
+}
+.fa-linkedin {
+  color: #007bb6;
+}
+.fa-linkedin:hover,
+.fa-linkedin:focus {
+  text-decoration: none;
+  color: #005983;
+}
+.fa-skype {
+  color: #12a5f4;
+}
+.fa-skype:hover,
+.fa-skype:focus {
+  text-decoration: none;
+  color: #0986ca;
+}
+.fa-stack-overflow {
+  color: #8e8e92;
+}
+.fa-stack-overflow:hover,
+.fa-stack-overflow:focus {
+  text-decoration: none;
+  color: #747479;
+}
+.fa-soundcloud {
+  color: #e8822d;
+}
+.fa-soundcloud:hover,
+.fa-soundcloud:focus {
+  text-decoration: none;
+  color: #cc6916;
+}
+.fa-pinterest {
+  color: #bd091f;
+}
+.fa-pinterest:hover,
+.fa-pinterest:focus {
+  text-decoration: none;
+  color: #8c0717;
+}
+.fa-vimeo {
+  color: #17b3e8;
+}
+.fa-vimeo:hover,
+.fa-vimeo:focus {
+  text-decoration: none;
+  color: #128fba;
+}
+.fa-behance {
+  color: #2c98cf;
+}
+.fa-behance:hover,
+.fa-behance:focus {
+  text-decoration: none;
+  color: #2379a5;
+}
+.fa-codepen {
+  color: #1c1c1c;
+}
+.fa-codepen:hover,
+.fa-codepen:focus {
+  text-decoration: none;
+  color: #020202;
+}
+.fa-foursquare {
+  color: #fa4778;
+}
+.fa-foursquare:hover,
+.fa-foursquare:focus {
+  text-decoration: none;
+  color: #f91554;
+}
+.fa-reddit {
+  color: #545454;
+}
+.fa-reddit:hover,
+.fa-reddit:focus {
+  text-decoration: none;
+  color: #3b3b3b;
+}
+.fa-spotify {
+  color: #acd200;
+}
+.fa-spotify:hover,
+.fa-spotify:focus {
+  text-decoration: none;
+  color: #829f00;
+}
+.fa-dribbble {
+  color: #ce366f;
+}
+.fa-dribbble:hover,
+.fa-dribbble:focus {
+  text-decoration: none;
+  color: #a82959;
+}
+.fa-facebook {
+  color: #4b6daa;
+}
+.fa-facebook:hover,
+.fa-facebook:focus {
+  text-decoration: none;
+  color: #3b5687;
+}
+.fa-angellist {
+  color: #000000;
+}
+.fa-angellist:hover,
+.fa-angellist:focus {
+  text-decoration: none;
+  color: #000000;
+}
+.fa-bitbucket {
+  color: #205081;
+}
+.fa-bitbucket:hover,
+.fa-bitbucket:focus {
+  text-decoration: none;
+  color: #163758;
+}
+.fa-google-plus {
+  color: #bf2a1d;
+}
+.fa-google-plus:hover,
+.fa-google-plus:focus {
+  text-decoration: none;
+  color: #932016;
+}
+.background-card h4 {
+  font-variant: small-caps;
+  color: #777777;
+  border-bottom: 1px solid #eeeeee;
+  padding-bottom: 1em;
+  margin-bottom: 1em;
+  line-height: 1.2;
+}
+.background-card h4:not(:first-child) {
+  margin-top: 2em;
+}
+h4 > .fa,
+h4 > .title {
+  display: inline-block;
+  vertical-align: baseline;
+}
+h4 > .fa {
+  width: 4rem;
+}
+.content {
+  line-height: 1.5;
+}
+.card {
+  background: #ffffff;
+  border: 1px solid #e6e6e6;
+  border-radius: 3px;
+  padding: 2em 3.5em;
+}
+.card-nested {
+  padding: 1.5rem 0 1.5rem 4.2rem;
+}
+.card-wrapper {
+  padding: 5px;
+}
+.enumeration:not(:last-child):after {
+  content: ", ";
+}
+.enumeration:last-child:after {
+  content: ".";
+}
+@media only screen and (max-width: 768px) {
+  .profile-card {
+    display: block;
+  }
+  .contact-details,
+  .profile-pic {
+    display: block;
+    text-align: center;
+  }
+  .card-nested {
+    padding-left: 0;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .contact-details .detail {
+    display: block;
+  }
+}
+.card-skills {
+  position: relative;
+}
+.skill-info {
+  margin-left: 20px;
+}
+@media only screen and (min-width: 768px) {
+  .skill {
+    border-left: 9px solid #555555;
+  }
+  .skill.beginner {
+    height: 50%;
+    border-color: #e74c3c;
+  }
+  .skill.intermediate {
+    height: 70%;
+    border-color: #f1c40f;
+  }
+  .skill.advanced {
+    border-color: #5cb85c;
+  }
+  .skill.master {
+    border-color: black;
+  }
+}
+@media (max-width: 768px) {
+  .quote {
+    font-size: inherit;
+  }
+}
+@media print {
+  body {
+    font-size: 10pt;
+  }
+  a[href]:after {
+    content: none !important;
+  }
+  .pagebreak {
+    page-break-before: always;
+  }
+  .background-card h4:not(:first-child) {
+    margin-top: 0 !important;
+  }
+  .card {
+    border: 0;
+    padding: 0;
+  }
+  .container {
+    max-width: 100%;
+    width: 100%;
+  }
+  .contact-details .detail .icon {
+    color: #888 !important;
+  }
+  .background-card h4 {
+    padding-bottom: 0.5em;
+    margin-bottom: 0.5em;
+    margin-top: 1em !important;
+  }
+  h4 > .fa {
+    display: none !important;
+  }
+  .card-nested {
+    padding: .5rem 0 .5rem 0;
+  }
+  .labels {
+    display: inline;
+  }
+  .skill-info {
+    margin-left: 0;
+  }
+  blockquote {
+    font-size: 100%;
+  }
+}
+
+    </style>
+  </head>
+
+  <body itemscope itemtype="http://schema.org/Person">
+    
+    <div class="container">
+      <section class="row">
+        <div class="card-wrapper">
+          <div class="card">
+            <div class="profile-card">
+                <div class="profile-pic">
+                  <img class="media-object img-circle center-block"  data-src="holder.js/100x100"
+                    alt="Jim Christopher" src="https://mvp.microsoft.com/en-us/PublicProfile/Photo/4032573" itemprop="image">
+                </div>
+                <div class="contact-details">
+                  <div class="name-and-profession">
+                    <h3 class="text-bolder name" itemprop="name"> Jim Christopher</h3>
+                    <h5 class="text-muted" itemprop="jobTitle">Data, Analytics, Software, and Technology</h5>
+                  </div>
+
+                    <div class="detail">
+                      <span class="icon">
+                        <i class="fa fa-lg fa-envelope"></i>
+                      </span>
+
+                      <span class="info">
+                        <a href="mailto:jim.christopher@gmail.com" class="link-disguise" itemprop="email">jim.christopher@gmail.com</a>
+                      </span>
+                    </div>
+
+                    <div class="detail">
+                      <span class="icon">
+                        <i class="fa fa-lg fa-phone"></i>
+                      </span>
+
+                      <a href="tel://980.322.9231" class="link-disguise info" itemprop="telephone">
+                        980.322.9231
+                      </a>
+                    </div>
+
+
+                </div>
+                
+            </div>
+            <hr>
+
+            <div class="social-links">
+                <a class="social-link" href="https://github.com/beefarino" target="_blank">
+                  <span class="fa fa-github fa-2x"></span> 
+                  <span class="social-link-text">https://github.com/beefarino</span>
+                </a>
+                <a class="social-link" href="https://twitter.com/beefarino" target="_blank">
+                  <span class="fa fa-twitter fa-2x"></span> 
+                  <span class="social-link-text">https://twitter.com/beefarino</span>
+                </a>
+                <a class="social-link" href="https://www.linkedin.com/in/jim-christopher-3344462" target="_blank">
+                  <span class="fa fa-linkedin fa-2x"></span> 
+                  <span class="social-link-text">https://www.linkedin.com/in/jim-christopher-3344462</span>
+                </a>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <section class="row">
+        <div class="card-wrapper">
+          <div class="card background-card">
+
+            <h4 id="about"> <span class="fa fa-lg fa-user"></span> <span class="title">About</span> </h4>
+            <div class="card-nested" itemprop="description">
+              <p> Forward-thinking software and data engineer with 22 years of professional experience across highly-regulated industries including commercial software, defense, and education.  Excellent written and verbal communication skills.  Adept research and analytical skills.  Award-winning teacher and avid speaker.  Seven-time Microsoft MVP.  Small business owner. </p>
+            </div>
+
+            <h4 id="work-experience"> <span class="fa fa-lg fa-pencil-square-o"></span> <span class="title">Work Experience</span> </h4>
+            <ul class="list-unstyled">
+                <li class="card-nested">
+                  <div class="content has-sidebar">
+                    <p class="clear-margin-sm">
+                      <strong>Director of Curriculum</strong>,
+                      <a href="https://www.pluralsight.com" target="_blank">Pluralsight</a>
+                    </p>
+                    <p class="text-muted">
+                      <small>
+                        <span class="space-right"> Oct 2014 -  Present  </span>
+                         <span> <i class="fa fa-clock-o icon-left"></i> 4 years 11 months </span> 
+                      </small>
+                    </p>
+                    <p>Forecast Data Professional library needs and identify authors appropriate to fill these needs. Curate course proposals and author auditions. Resolve quality and technical issues in course content. Mentor course authors to improve the learning experience from their courses. Develop curriculum for general learning, certifications, and customer-specific training requirements.</p>
+                      <ul>
+                          <li> Direct planning and operations for the most cost-effective segment of the Pluralsight content library. </li>
+                          <li> Grow data author NPS by 7%, reduced time to data course production by 17%, and increased throughput of author contracts by 22% through tractible data-driven processes of curriculum planning. </li>
+                          <li> Support data-driven role and skill planning using web scraping, data mining, natural language processing, and machine learning. </li>
+                          <li> Develop in-house data literacy curriculum for Content teams. </li>
+                      </ul>
+                  </div>
+
+                </li>
+                <li class="card-nested">
+                  <div class="content has-sidebar">
+                    <p class="clear-margin-sm">
+                      <strong>Crafter &amp; Proprieter</strong>,
+                      <a href="https://www.etsy.com/shop/YarnHooksNLoveSilly" target="_blank">Yarn, Hooks, &amp; Love Silly LLC</a>
+                    </p>
+                    <p class="text-muted">
+                      <small>
+                        <span class="space-right"> Feb 2017 -  Present  </span>
+                         <span> <i class="fa fa-clock-o icon-left"></i> 2 years 7 months </span> 
+                      </small>
+                    </p>
+                    <p>Design and sales of custom crochet pieces that incorporate electronics, biosensors, programming, and mathematics.</p>
+                      <ul>
+                          <li> Create the ChainOneTurn application to translate images into filet and colorwork crochet patterns. </li>
+                      </ul>
+                  </div>
+
+                </li>
+                <li class="card-nested">
+                  <div class="content has-sidebar">
+                    <p class="clear-margin-sm">
+                      <strong>Owner</strong>,
+                      Code Owls, LLC
+                    </p>
+                    <p class="text-muted">
+                      <small>
+                        <span class="space-right"> May 2009 -  Present  </span>
+                         <span> <i class="fa fa-clock-o icon-left"></i> 10 years 4 months </span> 
+                      </small>
+                    </p>
+                    <p>Provide contracted software engineering, data engineering, and project management services across highly regulated industries, including gaming, defense, and education.</p>
+                      <ul>
+                          <li> Reduce expenses of a large school district by 1.2 million dollars by implementing a cloud-based answer sheet processing system, allowing the district to use inexpensive commodity scanners. </li>
+                          <li> Release the open source p2f framework, which Microsoft now includes as part of the code base for PowerShell and Azure Cloud Shell. (https://github.com/PowerShell/SHiPS/blob/development/docs/Design.md) </li>
+                      </ul>
+                  </div>
+
+                </li>
+                <li class="card-nested">
+                  <div class="content has-sidebar">
+                    <p class="clear-margin-sm">
+                      <strong>Senior Software Engineer</strong>,
+                      <a href="http://pokertek.com" target="_blank">PokerTek, Inc</a>
+                    </p>
+                    <p class="text-muted">
+                      <small>
+                        <span class="space-right"> Aug 2005 -  Jan 2010  </span>
+                         <span> <i class="fa fa-clock-o icon-left"></i> 4 years 5 months </span> 
+                      </small>
+                    </p>
+                    <p>Implemented software and services to support automated poker tables and rooms. Research and development. Acting SCM, build master, and Scrum master.</p>
+                      <ul>
+                          <li> Reduced time and cost of regulatory approval cycles through implementation of data-driven documentation and static code analysis systems. </li>
+                          <li> Developed enterprise-wide application security and file integrity systems, including line-of-sight and monitoring of real-time status. </li>
+                          <li> Increased automated functional testing coverage to 80% of observed human behavior by developing a domain-specific language for describing poker room activity. </li>
+                      </ul>
+                  </div>
+
+                </li>
+                <li class="card-nested">
+                  <div class="content has-sidebar">
+                    <p class="clear-margin-sm">
+                      <strong>Senior Integration Engineer</strong>,
+                      LearningStation, Inc
+                    </p>
+                    <p class="text-muted">
+                      <small>
+                        <span class="space-right"> Jun 2002 -  Aug 2005  </span>
+                         <span> <i class="fa fa-clock-o icon-left"></i> 3 years 2 months </span> 
+                      </small>
+                    </p>
+                    <p>Integrated systems across various education platforms and architectures. Created a SAML-based identity federation service.</p>
+                      <ul>
+                          <li> Eliminated 37% of all support incidents through application of automated data audits. </li>
+                          <li> Implemented line-of-sight into data integration systems to support 99.9% uptime SLAs with external vendors. </li>
+                      </ul>
+                  </div>
+
+                </li>
+                <li class="card-nested">
+                  <div class="content has-sidebar">
+                    <p class="clear-margin-sm">
+                      <strong>Software Developer</strong>,
+                      Convey Systems, Inc
+                    </p>
+                    <p class="text-muted">
+                      <small>
+                        <span class="space-right"> Nov 2000 -  Jun 2002  </span>
+                         <span> <i class="fa fa-clock-o icon-left"></i> 1 year 6 months </span> 
+                      </small>
+                    </p>
+                    <p>Developed browser-based communication and collaboration software.</p>
+                      <ul>
+                          <li> Added 4.2 hours of average productivity per developer per week by automating software component documentation efforts. </li>
+                          <li> Reduced response time for support incidents by 15 minutes through centralized real-time logging. </li>
+                      </ul>
+                  </div>
+
+                </li>
+                <li class="card-nested">
+                  <div class="content has-sidebar">
+                    <p class="clear-margin-sm">
+                      <strong>Windows &amp; Internet Software Developer</strong>,
+                      <a href="http://bro.com" target="_blank">Breault Research Organization</a>
+                    </p>
+                    <p class="text-muted">
+                      <small>
+                        <span class="space-right"> Nov 1997 -  Dec 1999  </span>
+                         <span> <i class="fa fa-clock-o icon-left"></i> 2 years 1 month </span> 
+                      </small>
+                    </p>
+                    <p>Created Internet-aware application components to support industry-leading optical engineering software.</p>
+                      <ul>
+                          <li> Improved resolution rate of support team by 26% using Internet-enabled application support modules. </li>
+                          <li> Increased website traffic by 112% though the application of data-driven behavior analysis. </li>
+                          <li> Maintained a Secret clearance. </li>
+                      </ul>
+                  </div>
+
+                </li>
+            </ul>
+
+            <h4 id="skills"> <span class="fa fa-lg fa-code"></span> <span class="title">Skills</span> </h4>
+            <ul class="list-unstyled">
+                <li class="card-nested skill advanced">
+                  <strong>Software Development (advanced):</strong> 
+                   <span class="enumeration">Python</span>  <span class="enumeration">SQL</span>  <span class="enumeration">C#</span>  <span class="enumeration">C++</span>  <span class="enumeration">Javascript</span>  <span class="enumeration">git</span> 
+              </li>
+                <li class="card-nested skill advanced">
+                  <strong>Scripting &amp; Automation (advanced):</strong> 
+                   <span class="enumeration">PowerShell</span>  <span class="enumeration">Python</span>  <span class="enumeration">Javascript</span>  <span class="enumeration">Automation Design</span>  <span class="enumeration">API Design and Development</span> 
+              </li>
+                <li class="card-nested skill intermediate">
+                  <strong>Data Analytics &amp; Visualization (intermediate):</strong> 
+                   <span class="enumeration">Python</span>  <span class="enumeration">SQL</span>  <span class="enumeration">pandas</span>  <span class="enumeration">notebooks</span>  <span class="enumeration">statistics</span>  <span class="enumeration">scikit-learn</span>  <span class="enumeration">NLTK</span>  <span class="enumeration">spaCy</span>  <span class="enumeration">D3</span>  <span class="enumeration">Tableau</span>  <span class="enumeration">Power BI</span> 
+              </li>
+                <li class="card-nested skill intermediate">
+                  <strong>Data Engineering (intermediate):</strong> 
+                   <span class="enumeration">PostgreSQL</span>  <span class="enumeration">SQL Server</span>  <span class="enumeration">MariaDB</span>  <span class="enumeration">MongoDB</span>  <span class="enumeration">neo4j</span>  <span class="enumeration">SQL</span>  <span class="enumeration">Cypher</span>  <span class="enumeration">Knime</span>  <span class="enumeration">Orange3</span> 
+              </li>
+                <li class="card-nested skill intermediate">
+                  <strong>Web Development (intermediate):</strong> 
+                   <span class="enumeration">HTML</span>  <span class="enumeration">CSS</span>  <span class="enumeration">Javascript</span>  <span class="enumeration">D3</span> 
+              </li>
+            </ul>
+  
+            <h4 id="education"><span class="fa fa-lg fa-mortar-board"></span> <span class="title">Education</span></h4>
+            
+            <ul class="list-unstyled">
+                <li class="card-nested">
+                  <div class="content has-sidebar">
+                    <p class="clear-margin-sm">
+                      <strong>Cognitive Psychology, Masters</strong>,&nbsp;
+                      University of Arizona
+                    </p>
+                    <p class="text-muted">
+                      <small>
+                        Jul 1995 -  Nov 1997 
+                      </small>
+                    </p>
+                    <i>4.0</i>
+                    <div class="space-top labels">
+                      
+                    </div>
+                  </div>
+                </li>
+                <li class="card-nested">
+                  <div class="content has-sidebar">
+                    <p class="clear-margin-sm">
+                      <strong>Cognitive Psychology, Bachelors</strong>,&nbsp;
+                      Trinity University
+                    </p>
+                    <p class="text-muted">
+                      <small>
+                        Jul 1991 -  Apr 1995 
+                      </small>
+                    </p>
+                    <i>3.7</i>
+                    <div class="space-top labels">
+                      
+                    </div>
+                  </div>
+                </li>
+            </ul>
+
+            <h4 id="awards"><span class="fa fa-lg fa-trophy"></span> <span class="title">Awards</span></h4>
+            <ul class="list-unstyled">
+                <li class="card-nested">
+                  <div class="content has-sidebar">
+                    <p class="clear-margin-sm" itemprop="award">
+                      <strong>MVP, PowerShell</strong>,&nbsp;
+                      Microsoft
+                    </p>
+                    <p class="text-muted">
+                      <small> Awarded on: Mar 2011 </small>
+                    </p>
+                    <p> Seven year PowerShell MVP. </p>
+                  </div>
+                </li>
+                <li class="card-nested">
+                  <div class="content has-sidebar">
+                    <p class="clear-margin-sm" itemprop="award">
+                      <strong>Finalist, Blue Diamond Technology Award</strong>,&nbsp;
+                      Charlotte Chamber of Commerce
+                    </p>
+                    <p class="text-muted">
+                      <small> Awarded on: Apr 2002 </small>
+                    </p>
+                    <p> Finalist for Technology Innovation Award. </p>
+                  </div>
+                </li>
+                <li class="card-nested">
+                  <div class="content has-sidebar">
+                    <p class="clear-margin-sm" itemprop="award">
+                      <strong>Favorite Faculty Member</strong>,&nbsp;
+                      University of Arizona
+                    </p>
+                    <p class="text-muted">
+                      <small> Awarded on: Oct 1997 </small>
+                    </p>
+                    <p> Student-selected recognition of outstanding faculty members. </p>
+                  </div>
+                </li>
+            </ul>
+
+            <h4 id="volunteer-work"><span class="fa fa-lg fa-child"></span> <span class="title">Volunteer Work</span> </h4>
+            <ul class="list-unstyled">
+                <li class="card-nested">
+                  <div class="content has-sidebar">
+                    <p class="clear-margin-sm">
+                      <strong>Volunteer</strong>,&nbsp;
+                      Charlotte-Mecklenburg Schools
+                    </p>
+                    <p class="text-muted">
+                      <small>
+                        Jul 2008 -  Present 
+                      </small>
+                    </p>
+                    <p>Provide teaching assistance, in-class mentoring, technology application, and fundraising</p>
+                    <ul>
+                    </ul>
+                  </div>
+                </li>
+                <li class="card-nested">
+                  <div class="content has-sidebar">
+                    <p class="clear-margin-sm">
+                      <strong>Carpenter, Framer</strong>,&nbsp;
+                      Habitat for Humanity
+                    </p>
+                    <p class="text-muted">
+                      <small>
+                        Dec 2011 -  Present 
+                      </small>
+                    </p>
+                    <p>Build houses for families in need.</p>
+                    <ul>
+                    </ul>
+                  </div>
+                </li>
+                <li class="card-nested">
+                  <div class="content has-sidebar">
+                    <p class="clear-margin-sm">
+                      <strong>Organizer</strong>,&nbsp;
+                      Charlotte PowerShell Users Group
+                    </p>
+                    <p class="text-muted">
+                      <small>
+                        Dec 2007 -  Present 
+                      </small>
+                    </p>
+                    <p>Fund and organize local PowerShell user group activities.</p>
+                    <ul>
+                    </ul>
+                  </div>
+                </li>
+            </ul>
+
+            <h4  id="publications"><span class="fa fa-lg fa-book"></span> <span class="title">Publications</span> </h4>
+            <ul class="list-unstyled">
+                <li class="card-nested">
+                  <div class="content has-sidebar">
+                    <p class="clear-margin-sm">
+                      <strong>
+                         <a href="https://app.pluralsight.com/library/courses/application-instrumentation-using-performance-counters"  target="_blank">Application Instrumentation using Windows Performance Counters</a> 
+                      </strong>,&nbsp;
+                      Pluralsight
+                    </p>
+                    <p class="text-muted">
+                      <small> Published on: Jan 25, 2015 </small>
+                    </p>
+                    <p class="clear-margin">Course providing deep insight into using performance counters to instrument custom Windows applications.</p>
+                  </div>
+                  
+                </li>
+                <li class="card-nested">
+                  <div class="content has-sidebar">
+                    <p class="clear-margin-sm">
+                      <strong>
+                         <a href="https://app.pluralsight.com/library/courses/application-instrumentation-log4net"  target="_blank">Application Instrumentation using log4net</a> 
+                      </strong>,&nbsp;
+                      Pluralsight
+                    </p>
+                    <p class="text-muted">
+                      <small> Published on: Aug 27, 2013 </small>
+                    </p>
+                    <p class="clear-margin">Course providing deep insight into using log4net to instrument custom applications.</p>
+                  </div>
+                  
+                </li>
+                <li class="card-nested">
+                  <div class="content has-sidebar">
+                    <p class="clear-margin-sm">
+                      <strong>
+                         <a href="https://app.pluralsight.com/library/courses/powershell-gotchas"  target="_blank">PowerShell Gotchas</a> 
+                      </strong>,&nbsp;
+                      Pluralsight
+                    </p>
+                    <p class="text-muted">
+                      <small> Published on: Oct 26, 2013 </small>
+                    </p>
+                    <p class="clear-margin">Course covering some of the more frustrating patterns in PowerShell.</p>
+                  </div>
+                  
+                </li>
+                <li class="card-nested">
+                  <div class="content has-sidebar">
+                    <p class="clear-margin-sm">
+                      <strong>
+                         <a href="https://app.pluralsight.com/library/courses/everyday-ps"  target="_blank">Everyday PowerShell for Developers</a> 
+                      </strong>,&nbsp;
+                      Pluralsight
+                    </p>
+                    <p class="text-muted">
+                      <small> Published on: Nov 28, 2012 </small>
+                    </p>
+                    <p class="clear-margin">Course on using PowerShell for common developer tasks.</p>
+                  </div>
+                  
+                </li>
+                <li class="card-nested">
+                  <div class="content has-sidebar">
+                    <p class="clear-margin-sm">
+                      <strong>
+                         <a href="https://www.manning.com/books/powershell-deep-dives"  target="_blank">PowerShell Deep Dives</a> 
+                      </strong>,&nbsp;
+                      Manning
+                    </p>
+                    <p class="text-muted">
+                      <small> Published on: Jun 30, 2013 </small>
+                    </p>
+                    <p class="clear-margin">Authored chapter on the psake build system.</p>
+                  </div>
+                  
+                </li>
+                <li class="card-nested">
+                  <div class="content has-sidebar">
+                    <p class="clear-margin-sm">
+                      <strong>
+                         Replacing Institutional Knowledge with Artificial Intelligence so I can Take a Damned Vacation 
+                      </strong>,&nbsp;
+                      SQL Saturday #652
+                    </p>
+                    <p class="text-muted">
+                      <small> Published on: May 14, 2017 </small>
+                    </p>
+                    <p class="clear-margin">Conference talk providing insights into leveraging machine learning to augment human processes.</p>
+                  </div>
+                  
+                </li>
+                <li class="card-nested">
+                  <div class="content has-sidebar">
+                    <p class="clear-margin-sm">
+                      <strong>
+                         Automating SSIS Package Development and Management with BIPS 
+                      </strong>,&nbsp;
+                      SQL Saturday 
+                    </p>
+                    <p class="text-muted">
+                      <small> Published on: Nov 30, 2015 </small>
+                    </p>
+                    <p class="clear-margin">Conference presentation on the BIPS open source project.</p>
+                  </div>
+                  
+                </li>
+                <li class="card-nested">
+                  <div class="content has-sidebar">
+                    <p class="clear-margin-sm">
+                      <strong>
+                         Data Engineering and Automation with PowerShell 
+                      </strong>,&nbsp;
+                      Florida Virtual PowerShell Users Group
+                    </p>
+                    <p class="text-muted">
+                      <small> Published on: Mar 31, 2013 </small>
+                    </p>
+                    <p class="clear-margin">Conference talk on the EntityShell open source data ORM project.</p>
+                  </div>
+                  
+                </li>
+                <li class="card-nested">
+                  <div class="content has-sidebar">
+                    <p class="clear-margin-sm">
+                      <strong>
+                         Fun with Lilypad! 
+                      </strong>,&nbsp;
+                      MADExpo
+                    </p>
+                    <p class="text-muted">
+                      <small> Published on: May 31, 2012 </small>
+                    </p>
+                    <p class="clear-margin">Conference talk providing an overview of building hobby systems with Lilypad GPIO boards.</p>
+                  </div>
+                  
+                </li>
+                <li class="card-nested">
+                  <div class="content has-sidebar">
+                    <p class="clear-margin-sm">
+                      <strong>
+                         Raising the Next Generation of Thinkers and Tinkers 
+                      </strong>,&nbsp;
+                      CodeStock
+                    </p>
+                    <p class="text-muted">
+                      <small> Published on: May 31, 2012 </small>
+                    </p>
+                    <p class="clear-margin">Conference workshop for parents on raising thinkers and tinkers.</p>
+                  </div>
+                  
+                </li>
+                <li class="card-nested">
+                  <div class="content has-sidebar">
+                    <p class="clear-margin-sm">
+                      <strong>
+                         Data Visualization with PowerShell 
+                      </strong>,&nbsp;
+                      ALT.NET Charlotte
+                    </p>
+                    <p class="text-muted">
+                      <small> Published on: Dec 31, 2011 </small>
+                    </p>
+                    <p class="clear-margin">Conference talk on the SeeShell open source data visualization project.</p>
+                  </div>
+                  
+                </li>
+                <li class="card-nested">
+                  <div class="content has-sidebar">
+                    <p class="clear-margin-sm">
+                      <strong>
+                         Stupid PowerShell Tricks 
+                      </strong>,&nbsp;
+                      SQL Saturday #89
+                    </p>
+                    <p class="text-muted">
+                      <small> Published on: Aug 31, 2011 </small>
+                    </p>
+                    <p class="clear-margin">Conference talk focused on fun and useless PowerShell activities.</p>
+                  </div>
+                  
+                </li>
+                <li class="card-nested">
+                  <div class="content has-sidebar">
+                    <p class="clear-margin-sm">
+                      <strong>
+                         Automating Visual Studio with StudioShell 
+                      </strong>,&nbsp;
+                      DEVLink
+                    </p>
+                    <p class="text-muted">
+                      <small> Published on: Jul 31, 2011 </small>
+                    </p>
+                    <p class="clear-margin">Conference presentation on the StudioShell open source project.</p>
+                  </div>
+                  
+                </li>
+                <li class="card-nested">
+                  <div class="content has-sidebar">
+                    <p class="clear-margin-sm">
+                      <strong>
+                         PowerShell for Developers 
+                      </strong>,&nbsp;
+                      Atlanta Code Camp
+                    </p>
+                    <p class="text-muted">
+                      <small> Published on: May 31, 2011 </small>
+                    </p>
+                    <p class="clear-margin">Conference talk providing insights into using PowerShell as part of a developer workflow.</p>
+                  </div>
+                  
+                </li>
+                <li class="card-nested">
+                  <div class="content has-sidebar">
+                    <p class="clear-margin-sm">
+                      <strong>
+                         Getting Started with Arduino 
+                      </strong>,&nbsp;
+                      CodeStock
+                    </p>
+                    <p class="text-muted">
+                      <small> Published on: May 31, 2010 </small>
+                    </p>
+                    <p class="clear-margin">Conference talk providing an overview of building hobby systems with Arduino GPIO boards.</p>
+                  </div>
+                  
+                </li>
+                <li class="card-nested">
+                  <div class="content has-sidebar">
+                    <p class="clear-margin-sm">
+                      <strong>
+                         Distributed Version Control with Mercurial and Git 
+                      </strong>,&nbsp;
+                      ALT.NET Charlotte
+                    </p>
+                    <p class="text-muted">
+                      <small> Published on: Apr 30, 2010 </small>
+                    </p>
+                    <p class="clear-margin">Conference talk detailing common patterns and practices in distributed version control.</p>
+                  </div>
+                  
+                </li>
+                <li class="card-nested">
+                  <div class="content has-sidebar">
+                    <p class="clear-margin-sm">
+                      <strong>
+                         PowerShell as a Tools Platform 
+                      </strong>,&nbsp;
+                      Richmond Code Camp
+                    </p>
+                    <p class="text-muted">
+                      <small> Published on: Oct 31, 2010 </small>
+                    </p>
+                    <p class="clear-margin">Conference talk outlining the case for using PowerShell as a platform for application tooling.</p>
+                  </div>
+                  
+                </li>
+                <li class="card-nested">
+                  <div class="content has-sidebar">
+                    <p class="clear-margin-sm">
+                      <strong>
+                         Extending the Windows Scripting Environment 
+                      </strong>,&nbsp;
+                      Windows Developer&#x27;s Journal
+                    </p>
+                    <p class="text-muted">
+                      <small> Published on: Oct 31, 2001 </small>
+                    </p>
+                    <p class="clear-margin">Magazine article outlining how to extend the windows scripting environment with custom objects.</p>
+                  </div>
+                  
+                </li>
+            </ul>
+
+            <h4 id="interests"> <span class="fa fa-lg fa-heart"></span> <span class="title">Interests</span> </h4>
+            <ul class="list-unstyled">
+                <li class="card-nested">
+                  <p>
+                    <strong>Tiny Houses</strong>
+                  </p>
+
+                  <div class="space-top labels">
+                      <span class="label label-keyword">construction</span>
+                      <span class="label label-keyword">off-grid living</span>
+                  </div>
+                </li>
+                <li class="card-nested">
+                  <p>
+                    <strong>Fiction Writing</strong>
+                  </p>
+
+                  <div class="space-top labels">
+                      <span class="label label-keyword">novels</span>
+                  </div>
+                </li>
+                <li class="card-nested">
+                  <p>
+                    <strong>Music</strong>
+                  </p>
+
+                  <div class="space-top labels">
+                      <span class="label label-keyword">guitar</span>
+                      <span class="label label-keyword">ukelele</span>
+                      <span class="label label-keyword">live concerts</span>
+                  </div>
+                </li>
+            </ul>
+
+
+            <h4 id="languages"><span class="fa fa-lg fa-language"></span> <span class="title">Languages</span> </h4>
+            <p class="card-nested">
+                <span class="enumeration">
+                  <strong>English</strong> (Native speaker)
+                </span>
+            </ul>
+
+          </div>
+        </div>
+      </section>
+    </div>
+    
+  </body>
+</html>

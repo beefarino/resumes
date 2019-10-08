@@ -1,0 +1,52 @@
+{
+  "_from": "jsonresume-theme-simple",
+  "_id": "jsonresume-theme-simple@1.0.0",
+  "_inBundle": false,
+  "_integrity": "sha1-KLzMbsCwu/K4GHNHn0KwKT4Y8u4=",
+  "_location": "/jsonresume-theme-simple",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "jsonresume-theme-simple",
+    "name": "jsonresume-theme-simple",
+    "escapedName": "jsonresume-theme-simple",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/jsonresume-theme-simple/-/jsonresume-theme-simple-1.0.0.tgz",
+  "_shasum": "28bccc6ec0b0bbf2b81873479f42b0293e18f2ee",
+  "_spec": "jsonresume-theme-simple",
+  "_where": "C:\\Users\\Jim\\documents\\project\\resumes",
+  "author": {
+    "name": "Brian Mullan"
+  },
+  "bugs": {
+    "url": "https://github.com/bmullan91/jsonresume-theme-simple/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "handlebars": "^2.0.0-alpha.4"
+  },
+  "deprecated": false,
+  "description": "Beautifully simple theme, compatible with jsonresume.org",
+  "homepage": "https://github.com/bmullan91/jsonresume-theme-simple#readme",
+  "keywords": [
+    "jsonresume",
+    "json resume",
+    "resume theme",
+    "resume"
+  ],
+  "license": "MIT",
+  "name": "jsonresume-theme-simple",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bmullan91/jsonresume-theme-simple.git"
+  },
+  "version": "1.0.0"
+}

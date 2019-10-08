@@ -4,6 +4,7 @@
   "description": "Jim's resumes",
   "main": "index.js",
   "dependencies": {
+    "d3-timeline": "^1.0.1",
     "jsonresume-theme-boilerplate": "^0.1.2",
     "jsonresume-theme-bootstrap-icons": "^0.2.1",
     "jsonresume-theme-crisp": "^0.2.12",

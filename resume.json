@@ -2,12 +2,12 @@
   "basics": {
     "name": "Jim Christopher",
     "label": "Data, Analytics, Software, and Technology",
-    "picture": "https://mvp.microsoft.com/en-us/PublicProfile/Photo/4032573",
+    "picture": "res/profile.jpg",
     "email": "jim.christopher@gmail.com",
     "phone": "980.322.9231",
-    "website": "http://beefycode.com",    
+    "website": "http://beefycode.com",
     "summary": "Forward-thinking software and data engineer with 22 years of professional experience across highly-regulated industries including commercial software, defense, and education.  Excellent written and verbal communication skills.  Adept research and analytical skills.  Award-winning teacher and avid speaker.  Seven-time Microsoft MVP.  Small business owner.",
-    "_location": {
+    "location": {
       "address": "2104 Mondo Ln",
       "postalCode": "NC 28079",
       "city": "Indian Trail",
@@ -21,12 +21,12 @@
         "url": "https://github.com/beefarino"
       },
       {
-        "network": "Twitter",
+        "network": "twitter",
         "username": "beefarino",
         "url": "https://twitter.com/beefarino"
       },
       {
-        "network": "LinkedIn",
+        "network": "linkedin",
         "username": "jim-christopher",
         "url": "https://www.linkedin.com/in/jim-christopher-3344462"
       }
@@ -104,7 +104,7 @@
       "summary": "Developed browser-based communication and collaboration software.",
       "highlights": [
         "Added 4.2 hours of average productivity per developer per week by automating software component documentation efforts.",
-        "Reduced response time for support incidents by 15 minutes through centralized real-time logging of field incidents."
+        "Reduced response time for support incidents by 15 minutes through centralized real-time logging."
       ]
     },
     {

@@ -1,0 +1,1552 @@
+<!doctype html>
+<html>
+   <head>
+
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, user-scalable=no, minimal-ui">
+      <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+      <link rel="stylesheet" href="css/socialstyles.css">
+      <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+      <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+      <script src="js/on-screen.umd.min.js"></script>
+      <script src="js/scripts.js"></script>
+
+      <title>Jim Christopher</title>
+
+      <style>
+@import url('https://fonts.googleapis.com/css?family=Lato|Ubuntu+Mono|VT323|Share+Tech+Mono');
+
+/* GLOBAL STYLES */
+
+html {
+   height: 100%;
+   width: 100%;
+}
+
+body {
+   background: #f0f0f0;
+/*   background-image: url("http://cdn.backgroundhost.com/backgrounds/subtlepatterns/cubes.png"); */
+   background-image: url("http://cdn.backgroundhost.com/backgrounds/subtlepatterns/cross_scratches.png");
+	font: 14px 'Lato', Helvetica, sans-serif;
+	line-height: 20px;
+   height: 100%;
+   width: 100%;
+	margin: 0;
+   padding: 0;
+}
+
+::selection {
+   background: #bbfb87; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+   background: #bbfb87; /* Gecko Browsers */
+}
+
+div, input, ul, li, p, h1, h2, h3, h4 {
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   box-sizing: border-box;
+}
+
+h1, h2, h3, h4, p {
+   font-family: 'Lato';
+   font-style: normal;
+   font-variant: normal;
+   margin: 0;
+}
+
+h1 {
+   font-size: 35px;
+}
+
+h2 {
+   font-size: 22px;
+   font-weight: 700;
+   text-transform: uppercase;
+   color: #979ab1;
+}
+
+h3 {
+   font-size: 18px;
+   text-transform: uppercase;
+}
+
+p {
+   font-size: 14px;
+}
+
+section {
+   background-color: white;
+   padding: 20px;
+   box-shadow: 1px 1px 14px -5px rgba(0,0,0,0.5);
+   max-width: 600px;
+   margin: 20px auto;
+   position: relative;
+}
+
+#wrapper {
+   max-width: 600px;
+   position: relative;
+   margin: 0px auto;
+}
+
+.item {
+   margin: 30px 0px 0px 0px;
+}
+
+.col1-2 {
+   float: left;
+   width: 50%;
+}
+
+.clear {
+   clear: both;
+}
+
+icon {
+   margin-right: 10px;
+}
+
+
+/* RESPONSIVE STYLES FOR THUMBNAIL AND MENU */
+@media (max-width: 991px) {
+   #basics {
+      margin-top: 120px !important;
+      padding-top: 120px !important;
+   }
+
+   .thumbnail {
+      display: none;
+   }
+
+   #basics .thumbnail {
+      background-color: white;
+      display: block;
+      margin: -100px !important;
+      position: absolute !important;
+      top: 0 !important;
+      left: 50% !important;
+      box-shadow: 0px -3px 8px -5px rgba(0,0,0,0.5) !important;
+      z-index: 5;
+   }
+   #basics .thumbnail img {
+      width: 100% !important;
+      height: initial !important;
+      filter: initial !important;
+      -webkit-filter: initial !important;
+      opacity: 1 !important;
+   }
+  
+   #scroll-spy {
+      display: none;
+   }
+
+   #flt {
+      display: block;
+      width: 50px;
+      height: 50px;
+      position: fixed;
+      top: 10px;
+      right: 10px;
+      background-color: white;
+      border-radius: 100%;
+      box-shadow: 1px 1px 14px -5px rgba(0,0,0,0.5);
+      z-index: 10;
+   }
+
+   #flt .flt-button,
+   #flt .flt-close {
+      text-align: center;
+   }
+
+   #flt .flt-button a,
+   #flt .flt-close a {
+      color: #bbfb87;
+   }
+
+   #flt .flt-button a:hover,
+   #flt .flt-close a:hover {
+      color: #e1e8f1;
+   }
+
+   #flt .flt-button icon,
+   #flt .flt-close icon {
+      font-size: 26px;
+      margin: 0px;
+      padding: 12px 0px;
+   }
+}
+
+@media (min-width: 992px) {
+   #flt {
+      display: none;
+   }
+}
+
+/* NAVIGATION MENU STYLES */
+
+nav {
+   position: fixed;
+   text-align: left;
+   text-transform: uppercase;
+}
+
+nav ul li a {
+   padding: 5px !important;
+   transition: all 0.5s ease 0s;
+}
+
+nav ul li a:hover,
+nav ul li.active a {
+   color: black;
+   background-color: transparent !important;
+}
+
+nav#scroll-spy {
+   z-index: 999;
+   margin-left: 620px;
+}
+
+nav#flt-menu {
+   display:none;
+   top: 10px;
+   right: 10px;
+   background: white;
+   box-shadow: 1px 1px 14px -5px rgba(0,0,0,0.5);
+   padding: 20px;
+}
+
+nav#flt-menu ul {
+   padding-bottom: 10px;
+}
+
+/* THUMBNAIL STYLES */
+
+div.thumbnail {
+   background: transparent;
+   width: 200px;
+   height: 200px;
+   position: absolute;
+   margin: 0px;
+   border-radius: 100%;
+   padding: 0px;
+   border: 0px;
+   top: 0px;
+   left: -220px;
+   z-index: 1;
+}
+
+div.thumbnail img {
+   width: 100%;
+   height: 100%;
+   border-radius: 100%;
+   transition: all 1s ease 0s;
+   -webkit-filter: grayscale(100%);
+   filter: grayscale(100%);
+   opacity: 0.0;
+}
+
+div.thumbnail.active {
+   position: fixed;
+   top: initial;
+   left: initial;
+   top: 20px;
+   margin-left: -240px;
+   z-index: 100;
+   box-shadow: 1px 1px 14px -5px rgba(0,0,0,0.5);
+}
+
+div.thumbnail.active img {
+    -webkit-filter: initial;
+   filter: initial;
+   opacity: 1;
+}
+
+
+
+/* BASIC INFORMATION SECTION STYLES */
+
+#basics h1,
+#basics h2 {
+   text-align: center;
+   margin-top: 5px;
+}
+
+#basics .summary {
+   font-family: 'Share Tech Mono';
+   font-size: 14px;
+   margin: 30px;
+}
+
+#basics .info {
+   margin: 20px 0px;
+   border-top: 1px solid #f0f0f0;
+   padding-top: 20px;
+}
+
+#basics .profiles {
+   text-align: center;
+}
+
+#basics .contact {
+   color: #979ab1;
+   text-align: left;
+   font-size: 12px;
+}
+
+#basics .contact .contact_row {
+   min-height: 20px;
+}
+
+
+#basics .contact icon {
+   float: left;
+   margin: 0px;
+   font-size: 15px;
+}
+
+#basics .contact span {
+   margin-left: 25px;
+   display: block;
+}
+
+
+/* TIMELINE SECTIONS STYLES */
+
+.timeline-section {
+   position: relative;
+}
+
+.timeline-section:before {
+   width: 5px;
+   height: 100%;
+   position: absolute;
+   left: 8.5%;
+   top: 0;
+   content: ' ';
+   display: block;
+   background: #e1e8f1;
+}
+
+.timeline-section .timeline {
+   width: 20%;
+   float: left;
+   text-align: center;
+   margin: 0px;
+   position: relative;
+   min-height: 1px;
+}
+
+.timeline-section .timeline div {
+   position: absolute;
+   background: white;
+   width: 100%;
+   padding: 5px 10px 5px 0px;
+}
+
+.timeline-section .timeline p {
+   font-size: 14px;
+   font-weight: bold;
+   line-height: 15px;
+   color: #444;
+}
+
+.timeline-section .timeline p.duration {
+   font-size: 12px;
+   font-weight: normal;
+   margin-top: 10px;
+}
+
+.timeline-section .description {
+   width: 80%;
+   float: left;
+}
+
+/* WORK AND VOLUNTEER SECTION STYLES */
+
+#work .position,
+#volunteer .position {
+   font-size: 20px;
+   margin-bottom: 10px;
+}
+
+#work .summary,
+#volunteer .summary {
+   margin: 0px 0px 20px 0px;
+}
+
+#work .highlights,
+#volunteer .highlights,
+#education .courses {
+   margin: 10px 0px;
+   font-size: 15px;
+   padding: 0px 0px 0px 30px;
+}
+
+#work .highlights li,
+#volunteer .highlights li,
+#education .courses li {
+   margin-bottom: 10px;
+   color: #bdd4e3;
+   font-size: 17px;
+   line-height: 15px;
+}
+
+#work .highlights li span,
+#volunteer .highlights li span,
+#education .courses li span {
+   font-size: 14px;
+   color: #333;
+}
+
+/* EDUCATION SECTION STYLES */
+
+#education .study-type {
+   font-size: 20px;
+   margin-bottom: 10px;
+}
+
+#education .institution {
+   text-transform: uppercase;
+   font-size: 14px;
+}
+
+#education .institution icon {
+   color: #979ab1;
+   margin-right: 5px;
+}
+
+#education .gpa {
+   margin-left: 25px;
+   font-size: 12px;
+}
+
+
+/* SKILLS AND LANGUAGES SECTION STYLES */
+
+ul.keywords {
+   list-style: none;
+   margin: 10px 0px 0px 0px;
+   padding: 0px;
+}
+
+ul.keywords li {
+   display: inline-block;
+   margin: 2px;
+   font-size: 12px;
+   background: #e1e8f1;
+   padding: 0px 5px;
+}
+
+#languages .progress,
+#skills .progress {
+   margin-bottom: 10px;
+   border-radius: 0px;
+   height: 30px;
+}
+
+
+#languages .native .progress-bar {
+   background: rgba(255,137,64,1);
+   background: -moz-linear-gradient(left, rgba(255,137,64,1) 0%, rgba(255,255,107,1) 100%);
+   background: -webkit-gradient(left top, right top, color-stop(0%, rgba(255,137,64,1)), color-stop(100%, rgba(255,255,107,1)));
+   background: -webkit-linear-gradient(left, rgba(255,137,64,1) 0%, rgba(255,255,107,1) 100%);
+   background: -o-linear-gradient(left, rgba(255,137,64,1) 0%, rgba(255,255,107,1) 100%);
+   background: -ms-linear-gradient(left, rgba(255,137,64,1) 0%, rgba(255,255,107,1) 100%);
+   background: linear-gradient(to right, rgba(255,137,64,1) 0%, rgba(255,255,107,1) 100%);
+   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff8940', endColorstr='#ffff6b', GradientType=1 );
+}
+
+#languages .master .progress-bar,
+#skills .master .progress-bar {
+   background: rgba(255,102,125,1);
+   background: -moz-linear-gradient(left, rgba(255,102,125,1) 0%, rgba(255,194,97,1) 100%);
+   background: -webkit-gradient(left top, right top, color-stop(0%, rgba(255,102,125,1)), color-stop(100%, rgba(255,194,97,1)));
+   background: -webkit-linear-gradient(left, rgba(255,102,125,1) 0%, rgba(255,194,97,1) 100%);
+   background: -o-linear-gradient(left, rgba(255,102,125,1) 0%, rgba(255,194,97,1) 100%);
+   background: -ms-linear-gradient(left, rgba(255,102,125,1) 0%, rgba(255,194,97,1) 100%);
+   background: linear-gradient(to right, rgba(255,102,125,1) 0%, rgba(255,194,97,1) 100%);
+   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff667d', endColorstr='#ffc261', GradientType=1 );
+}
+
+#languages .advanced .progress-bar,
+#skills .advanced .progress-bar {
+   background: rgba(138,102,255,1);
+   background: -moz-linear-gradient(left, rgba(138,102,255,1) 0%, rgba(255,97,255,1) 100%);
+   background: -webkit-gradient(left top, right top, color-stop(0%, rgba(138,102,255,1)), color-stop(100%, rgba(255,97,255,1)));
+   background: -webkit-linear-gradient(left, rgba(138,102,255,1) 0%, rgba(255,97,255,1) 100%);
+   background: -o-linear-gradient(left, rgba(138,102,255,1) 0%, rgba(255,97,255,1) 100%);
+   background: -ms-linear-gradient(left, rgba(138,102,255,1) 0%, rgba(255,97,255,1) 100%);
+   background: linear-gradient(to right, rgba(138,102,255,1) 0%, rgba(255,97,255,1) 100%);
+   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8a66ff', endColorstr='#ff61ff', GradientType=1 );
+}
+
+#languages .intermediate .progress-bar,
+#skills .intermediate .progress-bar {
+   background: rgba(97,181,255,1);
+   background: -moz-linear-gradient(left, rgba(97,181,255,1) 0%, rgba(102,255,209,1) 100%);
+   background: -webkit-gradient(left top, right top, color-stop(0%, rgba(97,181,255,1)), color-stop(100%, rgba(102,255,209,1)));
+   background: -webkit-linear-gradient(left, rgba(97,181,255,1) 0%, rgba(102,255,209,1) 100%);
+   background: -o-linear-gradient(left, rgba(97,181,255,1) 0%, rgba(102,255,209,1) 100%);
+   background: -ms-linear-gradient(left, rgba(97,181,255,1) 0%, rgba(102,255,209,1) 100%);
+   background: linear-gradient(to right, rgba(97,181,255,1) 0%, rgba(102,255,209,1) 100%);
+   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#61b5ff', endColorstr='#66ffd1', GradientType=1 );
+}
+
+#languages .beginner .progress-bar,
+#skills .beginner .progress-bar {
+   background: rgba(97,255,97,1);
+   background: -moz-linear-gradient(left, rgba(97,255,97,1) 0%, rgba(219,255,102,1) 100%);
+   background: -webkit-gradient(left top, right top, color-stop(0%, rgba(97,255,97,1)), color-stop(100%, rgba(219,255,102,1)));
+   background: -webkit-linear-gradient(left, rgba(97,255,97,1) 0%, rgba(219,255,102,1) 100%);
+   background: -o-linear-gradient(left, rgba(97,255,97,1) 0%, rgba(219,255,102,1) 100%);
+   background: -ms-linear-gradient(left, rgba(97,255,97,1) 0%, rgba(219,255,102,1) 100%);
+   background: linear-gradient(to right, rgba(97,255,97,1) 0%, rgba(219,255,102,1) 100%);
+   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#61ff61', endColorstr='#dbff66', GradientType=1 );
+}
+
+
+#languages .progress-bar,
+#skills .progress-bar {
+   padding: 5px 0px;
+   transition: all 4s ease 0s;
+   white-space: nowrap;
+}
+
+#languages .progress-bar span,
+#skills .progress-bar span {
+   margin-left: 10px;
+}
+
+#languages .progress-bar.zero,
+#skills .progress-bar.zero {
+   width: 0% !important;
+}
+
+#languages .name-bar,
+#skills .name-bar,
+#interests .name-bar {
+   font-size: 16px;
+   font-weight: bold;
+   text-transform: uppercase;
+   text-align: left;
+}
+
+/* AWARDS SECTION STYLES */
+
+#awards .title {
+   font-size: 22px;
+   margin-bottom: 5px;
+}
+
+#awards .awarder {
+   font-size: 14px;
+   text-transform: uppercase;
+   margin-bottom: 10px;
+}
+
+#awards .awarder icon {
+   color: #979ab1;
+   margin-right: 5px;
+}
+
+#awards .summary p {
+   color: #444;
+}
+
+
+/* PUBLICATIONS SECTION STYLES */
+
+#publications .item {
+   margin-top: 20px;
+}
+
+#publications .name {
+   font-size: 16px;
+}
+
+#publications .name .publisher {
+   font-size: 14px;
+}
+
+#publications .releaseDate {
+   font-size: 12px;
+}
+
+#publications .summary {
+   margin: 10px 0px;
+   border-left: 5px solid #e1e8f1;
+   font-size: 14px;
+   padding: 10px 20px;
+}
+
+/* REFERENCES SECTION STYLES */
+blockquote {
+   margin: 0;
+   margin-bottom: 10px;
+   border-left: 5px solid #e1e8f1;
+   font-size: 14px;
+   padding: 10px 20px;
+}
+
+
+/* BOTTOM SEPARATION */
+
+.space {
+   width: 100%;
+   height: 500px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+      </style>
+
+   </head>
+   <body data-spy="scroll" data-target="#scroll-spy" data-offset="100">
+
+      <div id="wrapper">
+
+
+         <!-- Top fixed navigation bar for small devices -->
+         <div id="flt">
+            <div class="flt-button">
+               <a href="#"><icon class="fa fa-bars"></icon></a>
+            </div>
+            <nav id="flt-menu">
+               <ul class="nav">
+                  <li><a href="#basics">Hello!</a></li>
+                  <li><a href="#work">Work Experience</a></li>
+                  <li><a href="#volunteer">Volunteer</a></li>
+                  <li><a href="#education">Education</a></li>
+                  <li><a href="#skills">Skills</a></li>
+                  <li><a href="#awards">Awards</a></li>
+                  <li><a href="#publications">Publications</a></li>
+                  <li><a href="#languages">Languages</a></li>
+                  <li><a href="#interests">Interests</a></li>
+               </ul>
+               <div class="flt-close">
+                  <a href="#"><icon class="fa fa-chevron-circle-up"></icon></a>
+               </div>
+            </nav>
+         </div>
+         
+         <!-- Side fixed navigation menu for big devices -->
+         <nav id="scroll-spy">
+            <ul class="nav" data-spy="affix">
+               <li><a href="#basics">Hello!</a></li>
+               <li><a href="#work">Work Experience</a></li>
+               <li><a href="#volunteer">Volunteer</a></li>
+               <li><a href="#education">Education</a></li>
+               <li><a href="#skills">Skills</a></li>
+               <li><a href="#awards">Awards</a></li>
+               <li><a href="#publications">Publications</a></li>
+               <li><a href="#languages">Languages</a></li>
+               <li><a href="#interests">Interests</a></li>
+            </ul>
+         </nav>
+
+         <section id="basics">
+            <div class="thumbnail">
+               <img src="https://mvp.microsoft.com/en-us/PublicProfile/Photo/4032573"/>
+            </div>
+            <h1>Jim Christopher</h1>
+            <h2>Data, Analytics, Software, and Technology</h2>
+
+            <div class="summary">
+               <icon class="fa fa-quote-left"></icon>
+               Forward-thinking software and data engineer with 22 years of professional experience across highly-regulated industries including commercial software, defense, and education.  Excellent written and verbal communication skills.  Adept research and analytical skills.  Award-winning teacher and avid speaker.  Seven-time Microsoft MVP.  Small business owner.
+               <icon class="fa fa-quote-right"></icon>
+            </div>
+
+            <div class="info">
+
+               <div class="contact col1-2">
+                  <div class="contact_row">
+                     <icon class="fa fa-link"></icon>
+                     <span><a href="http://beefycode.com" target="_blank">http://beefycode.com</a></span>
+                  </div>
+                  <div class="contact_row">
+                     <icon class="fa fa-paper-plane"></icon>
+                     <span>jim.christopher@gmail.com</span>
+                  </div>
+                  <div class="contact_row">
+                     <icon class="fa fa-phone"></icon>
+                     <span>980.322.9231</span>
+                  </div>
+               </div>
+
+               <div class="profiles col1-2">
+                  <a target="_blank" href="https://github.com/beefarino"><icon class="fa fa-github"></icon></a>
+                  <a target="_blank" href="https://twitter.com/beefarino"><icon class="fa fa-twitter"></icon></a>
+                  <a target="_blank" href="https://www.linkedin.com/in/jim-christopher-3344462"><icon class="fa fa-linkedin-square"></icon></a>
+               </div>
+
+               <div class="clear"></div>
+            </div>
+         </section>
+
+
+         <section id="work">
+            <div class="thumbnail">
+               <img src="https://mvp.microsoft.com/en-us/PublicProfile/Photo/4032573"/>
+            </div>
+
+            <h2><icon class="fa fa-building"></icon> Work Experience</h2>
+
+            <div class="timeline-section">
+               <div class="item">
+
+                  <div class="timeline">
+                     <div>
+                        <p>Nov, 2014</p>
+                        <p>Present</p>
+                        <p class="duration">4 years 11 months</p>
+                     </div>
+                  </div>
+
+                  <div class="description">
+                     <div class="position">
+                        <span>Director of Curriculum</span>, <a 
+                          href="https://www.pluralsight.com" target="_blank">Pluralsight</a>
+                                             </div>
+                     <div class="summary">
+                        <p>Forecast Data Professional library needs and identify authors appropriate to fill these needs. Curate course proposals and author auditions. Resolve quality and technical issues in course content. Mentor course authors to improve the learning experience from their courses. Develop curriculum for general learning, certifications, and customer-specific training requirements.</p>
+                     </div>
+                     <h3>Highlights</h3>
+                     <ul class="highlights">
+                        <li><span>Direct planning and operations for the most cost-effective segment of the Pluralsight content library.</span></li>
+                        <li><span>Grow data author NPS by 7%, reduced time to data course production by 17%, and increased throughput of author contracts by 22% through tractible data-driven processes of curriculum planning.</span></li>
+                        <li><span>Support data-driven role and skill planning using web scraping, data mining, natural language processing, and machine learning.</span></li>
+                        <li><span>Develop in-house data literacy curriculum for Content teams.</span></li>
+                     </ul>
+                  </div>
+                  <div class="clear"></div>
+
+               </div>
+               <div class="item">
+
+                  <div class="timeline">
+                     <div>
+                        <p>Mar, 2017</p>
+                        <p>Present</p>
+                        <p class="duration">2 years 7 months</p>
+                     </div>
+                  </div>
+
+                  <div class="description">
+                     <div class="position">
+                        <span>Crafter &amp; Proprieter</span>, <a 
+                          href="https://www.etsy.com/shop/YarnHooksNLoveSilly" target="_blank">Yarn, Hooks, &amp; Love Silly LLC</a>
+                                             </div>
+                     <div class="summary">
+                        <p>Design and sales of custom crochet pieces that incorporate electronics, biosensors, programming, and mathematics.</p>
+                     </div>
+                     <h3>Highlights</h3>
+                     <ul class="highlights">
+                        <li><span>Create the ChainOneTurn application to translate images into filet and colorwork crochet patterns.</span></li>
+                     </ul>
+                  </div>
+                  <div class="clear"></div>
+
+               </div>
+               <div class="item">
+
+                  <div class="timeline">
+                     <div>
+                        <p>Jun, 2009</p>
+                        <p>Present</p>
+                        <p class="duration">10 years 4 months</p>
+                     </div>
+                  </div>
+
+                  <div class="description">
+                     <div class="position">
+                        <span>Owner</span>, Code Owls, LLC
+                     </div>
+                     <div class="summary">
+                        <p>Provide contracted software engineering, data engineering, and project management services across highly regulated industries, including gaming, defense, and education.</p>
+                     </div>
+                     <h3>Highlights</h3>
+                     <ul class="highlights">
+                        <li><span>Reduce expenses of a large school district by 1.2 million dollars by implementing a cloud-based answer sheet processing system, allowing the district to use inexpensive commodity scanners.</span></li>
+                        <li><span>Release the open source p2f framework, which Microsoft now includes as part of the code base for PowerShell and Azure Cloud Shell. (https://github.com/PowerShell/SHiPS/blob/development/docs/Design.md)</span></li>
+                     </ul>
+                  </div>
+                  <div class="clear"></div>
+
+               </div>
+               <div class="item">
+
+                  <div class="timeline">
+                     <div>
+                        <p>Sep, 2005</p>
+                        <p>Feb, 2010</p>
+                        <p class="duration">4 years 5 months</p>
+                     </div>
+                  </div>
+
+                  <div class="description">
+                     <div class="position">
+                        <span>Senior Software Engineer</span>, <a 
+                          href="http://pokertek.com" target="_blank">PokerTek, Inc</a>
+                                             </div>
+                     <div class="summary">
+                        <p>Implemented software and services to support automated poker tables and rooms. Research and development. Acting SCM, build master, and Scrum master.</p>
+                     </div>
+                     <h3>Highlights</h3>
+                     <ul class="highlights">
+                        <li><span>Reduced time and cost of regulatory approval cycles through implementation of data-driven documentation and static code analysis systems.</span></li>
+                        <li><span>Developed enterprise-wide application security and file integrity systems, including line-of-sight and monitoring of real-time status.</span></li>
+                        <li><span>Increased automated functional testing coverage to 80% of observed human behavior by developing a domain-specific language for describing poker room activity.</span></li>
+                     </ul>
+                  </div>
+                  <div class="clear"></div>
+
+               </div>
+               <div class="item">
+
+                  <div class="timeline">
+                     <div>
+                        <p>Jul, 2002</p>
+                        <p>Sep, 2005</p>
+                        <p class="duration">3 years 2 months</p>
+                     </div>
+                  </div>
+
+                  <div class="description">
+                     <div class="position">
+                        <span>Senior Integration Engineer</span>, LearningStation, Inc
+                     </div>
+                     <div class="summary">
+                        <p>Integrated systems across various education platforms and architectures. Created a SAML-based identity federation service.</p>
+                     </div>
+                     <h3>Highlights</h3>
+                     <ul class="highlights">
+                        <li><span>Eliminated 37% of all support incidents through application of automated data audits.</span></li>
+                        <li><span>Implemented line-of-sight into data integration systems to support 99.9% uptime SLAs with external vendors.</span></li>
+                     </ul>
+                  </div>
+                  <div class="clear"></div>
+
+               </div>
+               <div class="item">
+
+                  <div class="timeline">
+                     <div>
+                        <p>Dec, 2000</p>
+                        <p>Jul, 2002</p>
+                        <p class="duration">1 year 6 months</p>
+                     </div>
+                  </div>
+
+                  <div class="description">
+                     <div class="position">
+                        <span>Software Developer</span>, Convey Systems, Inc
+                     </div>
+                     <div class="summary">
+                        <p>Developed browser-based communication and collaboration software.</p>
+                     </div>
+                     <h3>Highlights</h3>
+                     <ul class="highlights">
+                        <li><span>Added 4.2 hours of average productivity per developer per week by automating software component documentation efforts.</span></li>
+                        <li><span>Reduced response time for support incidents by 15 minutes through centralized real-time logging.</span></li>
+                     </ul>
+                  </div>
+                  <div class="clear"></div>
+
+               </div>
+               <div class="item">
+
+                  <div class="timeline">
+                     <div>
+                        <p>Dec, 1997</p>
+                        <p>Jan, 2000</p>
+                        <p class="duration">2 years 1 month</p>
+                     </div>
+                  </div>
+
+                  <div class="description">
+                     <div class="position">
+                        <span>Windows &amp; Internet Software Developer</span>, <a 
+                          href="http://bro.com" target="_blank">Breault Research Organization</a>
+                                             </div>
+                     <div class="summary">
+                        <p>Created Internet-aware application components to support industry-leading optical engineering software.</p>
+                     </div>
+                     <h3>Highlights</h3>
+                     <ul class="highlights">
+                        <li><span>Improved resolution rate of support team by 26% using Internet-enabled application support modules.</span></li>
+                        <li><span>Increased website traffic by 112% though the application of data-driven behavior analysis.</span></li>
+                        <li><span>Maintained a Secret clearance.</span></li>
+                     </ul>
+                  </div>
+                  <div class="clear"></div>
+
+               </div>
+            </div>
+         </section>
+
+         <section id="volunteer">
+            <div class="thumbnail">
+               <img src="https://mvp.microsoft.com/en-us/PublicProfile/Photo/4032573"/>
+            </div>
+            <h2><icon class="fa fa-life-ring"></icon> Volunteer</h2>
+            <div class="timeline-section">
+               <div class="item">
+                  <div class="timeline">
+                     <div>
+                        <p>Aug, 2008</p>
+                        <p>Present</p>
+                     </div>
+                  </div>
+                  <div class="description">
+                     <div class="position">
+                        <span>Volunteer</span>, <a 
+                          href="https://www.wearecms.com/" target="_blank">Charlotte-Mecklenburg Schools</a>
+                                             </div>
+                     <div class="summary">
+                        <p>Provide teaching assistance, in-class mentoring, technology application, and fundraising</p>
+                     </div>
+                  </div>
+                  <div class="clear"></div>
+               </div>
+
+               <div class="item">
+                  <div class="timeline">
+                     <div>
+                        <p>Jan, 2012</p>
+                        <p>Present</p>
+                     </div>
+                  </div>
+                  <div class="description">
+                     <div class="position">
+                        <span>Carpenter, Framer</span>, <a 
+                          href="https://www.habitat.org/" target="_blank">Habitat for Humanity</a>
+                                             </div>
+                     <div class="summary">
+                        <p>Build houses for families in need.</p>
+                     </div>
+                  </div>
+                  <div class="clear"></div>
+               </div>
+
+               <div class="item">
+                  <div class="timeline">
+                     <div>
+                        <p>Jan, 2008</p>
+                        <p>Present</p>
+                     </div>
+                  </div>
+                  <div class="description">
+                     <div class="position">
+                        <span>Organizer</span>, <a 
+                          href="https://www.meetup.com/Charlotte-PowerShell-Users-Group/" target="_blank">Charlotte PowerShell Users Group</a>
+                                             </div>
+                     <div class="summary">
+                        <p>Fund and organize local PowerShell user group activities.</p>
+                     </div>
+                  </div>
+                  <div class="clear"></div>
+               </div>
+
+            </div>
+
+         </section>
+
+         <section id="education">
+            <div class="thumbnail">
+               <img src="https://mvp.microsoft.com/en-us/PublicProfile/Photo/4032573"/>
+            </div>
+
+            <h2><icon class="fa fa-graduation-cap"></icon> Education</h2>
+
+            <div class="timeline-section">
+
+               <div class="item">
+
+                  <div class="timeline">
+                     <div><p>1995 to 1997</p> </div>
+                  </div>
+
+                  <div class="description">
+
+                     <div class="study-type">
+                        Masters
+                        in Cognitive Psychology
+                     </div>
+
+                     <div class="institution">
+                        <icon class="fa fa-university"></icon> University of Arizona
+                     </div>
+
+                     <div class="gpa">
+                        GPA: 4.0
+                     </div>
+
+                  </div>
+                  <div class="clear"></div>
+               </div>
+               <div class="item">
+
+                  <div class="timeline">
+                     <div><p>1991 to 1995</p> </div>
+                  </div>
+
+                  <div class="description">
+
+                     <div class="study-type">
+                        Bachelors
+                        in Cognitive Psychology
+                     </div>
+
+                     <div class="institution">
+                        <icon class="fa fa-university"></icon> Trinity University
+                     </div>
+
+                     <div class="gpa">
+                        GPA: 3.7
+                     </div>
+
+                  </div>
+                  <div class="clear"></div>
+               </div>
+            </div>
+         </section>
+
+         <section id="skills">
+            <div class="thumbnail">
+               <img src="https://mvp.microsoft.com/en-us/PublicProfile/Photo/4032573"/>
+            </div>
+
+            <h2><icon class="fa fa-code"></icon> Skills</h2>
+
+            <div class="item">
+               <!-- If there's value, we animate till the value -->
+               <div class="progress intermediate">
+                  <div class="progress-bar name-bar zero"
+                       role="progressbar"
+                       aria-valuenow="60"
+                       aria-valuemin="0"
+                       aria-valuemax="100"
+                       style="width:60%">
+                     <span>Data Analytics &amp; Visualization</span>
+                  </div>
+               </div>
+               <!-- If no value, we just place the name of the skill group -->
+
+               <ul class="keywords">
+                  <li>Python</li>
+                  <li>SQL</li>
+                  <li>pandas</li>
+                  <li>notebooks</li>
+                  <li>statistics</li>
+                  <li>scikit-learn</li>
+                  <li>NLTK</li>
+                  <li>spaCy</li>
+                  <li>D3</li>
+                  <li>Tableau</li>
+                  <li>Power BI</li>
+               </ul>
+
+            </div>
+            <div class="item">
+               <!-- If there's value, we animate till the value -->
+               <div class="progress intermediate">
+                  <div class="progress-bar name-bar zero"
+                       role="progressbar"
+                       aria-valuenow="60"
+                       aria-valuemin="0"
+                       aria-valuemax="100"
+                       style="width:60%">
+                     <span>Data Engineering</span>
+                  </div>
+               </div>
+               <!-- If no value, we just place the name of the skill group -->
+
+               <ul class="keywords">
+                  <li>PostgreSQL</li>
+                  <li>SQL Server</li>
+                  <li>MariaDB</li>
+                  <li>MongoDB</li>
+                  <li>neo4j</li>
+                  <li>SQL</li>
+                  <li>Cypher</li>
+                  <li>Knime</li>
+                  <li>Orange3</li>
+               </ul>
+
+            </div>
+            <div class="item">
+               <!-- If there's value, we animate till the value -->
+               <div class="progress advanced">
+                  <div class="progress-bar name-bar zero"
+                       role="progressbar"
+                       aria-valuenow="75"
+                       aria-valuemin="0"
+                       aria-valuemax="100"
+                       style="width:75%">
+                     <span>Software Development</span>
+                  </div>
+               </div>
+               <!-- If no value, we just place the name of the skill group -->
+
+               <ul class="keywords">
+                  <li>Python</li>
+                  <li>SQL</li>
+                  <li>C#</li>
+                  <li>C++</li>
+                  <li>Javascript</li>
+                  <li>git</li>
+               </ul>
+
+            </div>
+            <div class="item">
+               <!-- If there's value, we animate till the value -->
+               <div class="progress intermediate">
+                  <div class="progress-bar name-bar zero"
+                       role="progressbar"
+                       aria-valuenow="60"
+                       aria-valuemin="0"
+                       aria-valuemax="100"
+                       style="width:60%">
+                     <span>Web Development</span>
+                  </div>
+               </div>
+               <!-- If no value, we just place the name of the skill group -->
+
+               <ul class="keywords">
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>Javascript</li>
+                  <li>D3</li>
+               </ul>
+
+            </div>
+            <div class="item">
+               <!-- If there's value, we animate till the value -->
+               <div class="progress advanced">
+                  <div class="progress-bar name-bar zero"
+                       role="progressbar"
+                       aria-valuenow="75"
+                       aria-valuemin="0"
+                       aria-valuemax="100"
+                       style="width:75%">
+                     <span>Scripting &amp; Automation</span>
+                  </div>
+               </div>
+               <!-- If no value, we just place the name of the skill group -->
+
+               <ul class="keywords">
+                  <li>PowerShell</li>
+                  <li>Python</li>
+                  <li>Javascript</li>
+                  <li>Automation Design</li>
+                  <li>API Design and Development</li>
+               </ul>
+
+            </div>
+
+
+
+         </section>
+
+         <section id="awards">
+            <div class="thumbnail">
+               <img src="https://mvp.microsoft.com/en-us/PublicProfile/Photo/4032573"/>
+            </div>
+
+            <h2><icon class="fa fa-trophy"></icon> Awards</h2>
+
+            <div class="timeline-section">
+               <div class="item">
+                  <div class="timeline">
+                     <div><p>Apr, 2011</p></div>
+                  </div>
+                  <div class="description">
+                     <div class="title">
+                        MVP, PowerShell
+                     </div>
+                     <div class="awarder">
+                        <icon class="fa fa-star"></icon>
+                        Microsoft
+                     </div>
+                     <div class="summary">
+                        <p>Seven year PowerShell MVP.</p>
+                     </div>
+                  </div>
+                  <div class="clear"></div>
+               </div>
+               <div class="item">
+                  <div class="timeline">
+                     <div><p>May, 2002</p></div>
+                  </div>
+                  <div class="description">
+                     <div class="title">
+                        Finalist, Blue Diamond Technology Award
+                     </div>
+                     <div class="awarder">
+                        <icon class="fa fa-star"></icon>
+                        Charlotte Chamber of Commerce
+                     </div>
+                     <div class="summary">
+                        <p>Finalist for Technology Innovation Award.</p>
+                     </div>
+                  </div>
+                  <div class="clear"></div>
+               </div>
+               <div class="item">
+                  <div class="timeline">
+                     <div><p>Nov, 1997</p></div>
+                  </div>
+                  <div class="description">
+                     <div class="title">
+                        Favorite Faculty Member
+                     </div>
+                     <div class="awarder">
+                        <icon class="fa fa-star"></icon>
+                        University of Arizona
+                     </div>
+                     <div class="summary">
+                        <p>Student-selected recognition of outstanding faculty members.</p>
+                     </div>
+                  </div>
+                  <div class="clear"></div>
+               </div>
+            </div>
+         </section>
+
+         <section id="publications">
+            <div class="thumbnail">
+               <img src="https://mvp.microsoft.com/en-us/PublicProfile/Photo/4032573"/>
+            </div>
+
+            <h2><icon class="fa fa-align-left"></icon> Publications</h2>
+
+            <div class="item">
+               <div class="name">
+                  <a href="https://app.pluralsight.com/library/courses/application-instrumentation-using-performance-counters" 
+                     target="_blank">Application Instrumentation using Windows Performance Counters</a><span
+                     class="publisher">, Pluralsight</span>
+               </div>
+               <div class="releaseDate">
+                  Published on: Jan, 2015
+               </div>
+
+               <div class="summary">
+                  <p>Course providing deep insight into using performance counters to instrument custom Windows applications.</p>
+               </div>
+
+            </div>
+            <div class="item">
+               <div class="name">
+                  <a href="https://app.pluralsight.com/library/courses/application-instrumentation-log4net" 
+                     target="_blank">Application Instrumentation using log4net</a><span
+                     class="publisher">, Pluralsight</span>
+               </div>
+               <div class="releaseDate">
+                  Published on: Aug, 2013
+               </div>
+
+               <div class="summary">
+                  <p>Course providing deep insight into using log4net to instrument custom applications.</p>
+               </div>
+
+            </div>
+            <div class="item">
+               <div class="name">
+                  <a href="https://app.pluralsight.com/library/courses/powershell-gotchas" 
+                     target="_blank">PowerShell Gotchas</a><span
+                     class="publisher">, Pluralsight</span>
+               </div>
+               <div class="releaseDate">
+                  Published on: Oct, 2013
+               </div>
+
+               <div class="summary">
+                  <p>Course covering some of the more frustrating patterns in PowerShell.</p>
+               </div>
+
+            </div>
+            <div class="item">
+               <div class="name">
+                  <a href="https://app.pluralsight.com/library/courses/everyday-ps" 
+                     target="_blank">Everyday PowerShell for Developers</a><span
+                     class="publisher">, Pluralsight</span>
+               </div>
+               <div class="releaseDate">
+                  Published on: Nov, 2012
+               </div>
+
+               <div class="summary">
+                  <p>Course on using PowerShell for common developer tasks.</p>
+               </div>
+
+            </div>
+            <div class="item">
+               <div class="name">
+                  <a href="https://www.manning.com/books/powershell-deep-dives" 
+                     target="_blank">PowerShell Deep Dives</a><span
+                     class="publisher">, Manning</span>
+               </div>
+               <div class="releaseDate">
+                  Published on: Jul, 2013
+               </div>
+
+               <div class="summary">
+                  <p>Authored chapter on the psake build system.</p>
+               </div>
+
+            </div>
+            <div class="item">
+               <div class="name">
+Replacing Institutional Knowledge with Artificial Intelligence so I can Take a Damned Vacation<span
+                     class="publisher">, SQL Saturday #652</span>
+               </div>
+               <div class="releaseDate">
+                  Published on: May, 2017
+               </div>
+
+               <div class="summary">
+                  <p>Conference talk providing insights into leveraging machine learning to augment human processes.</p>
+               </div>
+
+            </div>
+            <div class="item">
+               <div class="name">
+Automating SSIS Package Development and Management with BIPS<span
+                     class="publisher">, SQL Saturday </span>
+               </div>
+               <div class="releaseDate">
+                  Published on: Dec, 2015
+               </div>
+
+               <div class="summary">
+                  <p>Conference presentation on the BIPS open source project.</p>
+               </div>
+
+            </div>
+            <div class="item">
+               <div class="name">
+Data Engineering and Automation with PowerShell<span
+                     class="publisher">, Florida Virtual PowerShell Users Group</span>
+               </div>
+               <div class="releaseDate">
+                  Published on: Apr, 2013
+               </div>
+
+               <div class="summary">
+                  <p>Conference talk on the EntityShell open source data ORM project.</p>
+               </div>
+
+            </div>
+            <div class="item">
+               <div class="name">
+Fun with Lilypad!<span
+                     class="publisher">, MADExpo</span>
+               </div>
+               <div class="releaseDate">
+                  Published on: Jun, 2012
+               </div>
+
+               <div class="summary">
+                  <p>Conference talk providing an overview of building hobby systems with Lilypad GPIO boards.</p>
+               </div>
+
+            </div>
+            <div class="item">
+               <div class="name">
+Raising the Next Generation of Thinkers and Tinkers<span
+                     class="publisher">, CodeStock</span>
+               </div>
+               <div class="releaseDate">
+                  Published on: Jun, 2012
+               </div>
+
+               <div class="summary">
+                  <p>Conference workshop for parents on raising thinkers and tinkers.</p>
+               </div>
+
+            </div>
+            <div class="item">
+               <div class="name">
+Data Visualization with PowerShell<span
+                     class="publisher">, ALT.NET Charlotte</span>
+               </div>
+               <div class="releaseDate">
+                  Published on: Jan, 2012
+               </div>
+
+               <div class="summary">
+                  <p>Conference talk on the SeeShell open source data visualization project.</p>
+               </div>
+
+            </div>
+            <div class="item">
+               <div class="name">
+Stupid PowerShell Tricks<span
+                     class="publisher">, SQL Saturday #89</span>
+               </div>
+               <div class="releaseDate">
+                  Published on: Sep, 2011
+               </div>
+
+               <div class="summary">
+                  <p>Conference talk focused on fun and useless PowerShell activities.</p>
+               </div>
+
+            </div>
+            <div class="item">
+               <div class="name">
+Automating Visual Studio with StudioShell<span
+                     class="publisher">, DEVLink</span>
+               </div>
+               <div class="releaseDate">
+                  Published on: Aug, 2011
+               </div>
+
+               <div class="summary">
+                  <p>Conference presentation on the StudioShell open source project.</p>
+               </div>
+
+            </div>
+            <div class="item">
+               <div class="name">
+PowerShell for Developers<span
+                     class="publisher">, Atlanta Code Camp</span>
+               </div>
+               <div class="releaseDate">
+                  Published on: Jun, 2011
+               </div>
+
+               <div class="summary">
+                  <p>Conference talk providing insights into using PowerShell as part of a developer workflow.</p>
+               </div>
+
+            </div>
+            <div class="item">
+               <div class="name">
+Getting Started with Arduino<span
+                     class="publisher">, CodeStock</span>
+               </div>
+               <div class="releaseDate">
+                  Published on: Jun, 2010
+               </div>
+
+               <div class="summary">
+                  <p>Conference talk providing an overview of building hobby systems with Arduino GPIO boards.</p>
+               </div>
+
+            </div>
+            <div class="item">
+               <div class="name">
+Distributed Version Control with Mercurial and Git<span
+                     class="publisher">, ALT.NET Charlotte</span>
+               </div>
+               <div class="releaseDate">
+                  Published on: May, 2010
+               </div>
+
+               <div class="summary">
+                  <p>Conference talk detailing common patterns and practices in distributed version control.</p>
+               </div>
+
+            </div>
+            <div class="item">
+               <div class="name">
+PowerShell as a Tools Platform<span
+                     class="publisher">, Richmond Code Camp</span>
+               </div>
+               <div class="releaseDate">
+                  Published on: Nov, 2010
+               </div>
+
+               <div class="summary">
+                  <p>Conference talk outlining the case for using PowerShell as a platform for application tooling.</p>
+               </div>
+
+            </div>
+            <div class="item">
+               <div class="name">
+Extending the Windows Scripting Environment<span
+                     class="publisher">, Windows Developer&#x27;s Journal</span>
+               </div>
+               <div class="releaseDate">
+                  Published on: Nov, 2001
+               </div>
+
+               <div class="summary">
+                  <p>Magazine article outlining how to extend the windows scripting environment with custom objects.</p>
+               </div>
+
+            </div>
+         </section>
+
+         <section id="languages">
+            <div class="thumbnail">
+               <img src="https://mvp.microsoft.com/en-us/PublicProfile/Photo/4032573"/>
+            </div>
+
+            <h2><icon class="fa fa-comment"></icon> Languages</h2>
+
+            <div class="item">
+               <!-- If there's value, we animate till the value -->
+               <div class="name-bar">
+                  English
+               </div>
+            </div>
+
+         </section>
+
+         <section id="interests">
+            <div class="thumbnail">
+               <img src="https://mvp.microsoft.com/en-us/PublicProfile/Photo/4032573"/>
+            </div>
+
+            <h2><icon class="fa fa-heart"></icon> Interests</h2>
+
+            <div class="item">
+               <div class="name-bar">
+                  Tiny Houses
+               </div>
+               <ul class="keywords">
+                  <li>construction</li>
+                  <li>off-grid living</li>
+               </ul>
+            </div>
+            <div class="item">
+               <div class="name-bar">
+                  Fiction Writing
+               </div>
+               <ul class="keywords">
+                  <li>novels</li>
+               </ul>
+            </div>
+            <div class="item">
+               <div class="name-bar">
+                  Music
+               </div>
+               <ul class="keywords">
+                  <li>guitar</li>
+                  <li>ukelele</li>
+                  <li>live concerts</li>
+               </ul>
+            </div>
+         </section>
+
+
+
+         <div class="space"></div>
+
+      </div>
+   </body>
+</html>

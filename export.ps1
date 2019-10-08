@@ -1,4 +1,7 @@
-param( $theme );
+param( $theme, $show );
+
+remove-item ./node_modules/jsonresume-theme-jimbo* -rec -force;
+copy-item ./jsonresume-theme-jimbo* -dest ./node_modules -rec -force;
 
 $blob = $theme;
 if( -not $theme ) {
@@ -10,7 +13,11 @@ if( -not $theme ) {
 
 @($theme) | foreach {
   $name = $_;
-  node .\node_modules\resume-cli export --theme=${name}  ./_local/jim-christopher-${name}.html
+  node .\node_modules\resume-cli export --theme=${name}  ./output/jim-christopher-${name}.html
 }
 
-ls ./_local/jim-christopher-${blob}.html | ii;
+copy-item ./res -dest ./output -container -rec -force;
+ls ./output/*markdown.html | copy-item  -dest { './output/' + ($_.name -replace '\.html','.md') };
+if($show) {
+  ls ./output/jim-christopher-${blob}.html | ii;
+}
