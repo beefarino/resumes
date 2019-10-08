@@ -1,4 +1,4 @@
-param( $theme, $show );
+param( $theme, [switch]$show );
 
 remove-item ./node_modules/jsonresume-theme-jimbo* -rec -force;
 copy-item ./jsonresume-theme-jimbo* -dest ./node_modules -rec -force;
