@@ -31,7 +31,7 @@
   },
   "bundleDependencies": false,
   "dependencies": {
-    "handlebars": "^2.0.0-alpha.4"
+    "handlebars": "^4.4.2"
   },
   "deprecated": false,
   "description": "Beautifully simple theme, compatible with jsonresume.org",
