@@ -5,7 +5,7 @@
     "picture": "https://mvp.microsoft.com/en-us/PublicProfile/Photo/4032573",
     "email": "jim.christopher@gmail.com",
     "phone": "980.322.9231",
-    "website": "http://beefycode.com",
+    "website": "http://beefycode.com",    
     "summary": "Forward-thinking software and data engineer with 22 years of professional experience across highly-regulated industries including commercial software, defense, and education.  Excellent written and verbal communication skills.  Adept research and analytical skills.  Award-winning teacher and avid speaker.  Seven-time Microsoft MVP.  Small business owner.",
     "_location": {
       "address": "2104 Mondo Ln",
@@ -39,12 +39,12 @@
       "website": "https://www.pluralsight.com",
       "startDate": "2014-11-01",
 
-      "summary": "Forecast Data Professional library needs and identify authors appropriate to fill these needs. Curate course proposals and author auditions. Resolving quality and technical issues in course content. Mentoring course authors to improve the learning experience from their courses. Develop curriculum for general learning, certifications, and customer-specific training requirements.",
+      "summary": "Forecast Data Professional library needs and identify authors appropriate to fill these needs. Curate course proposals and author auditions. Resolve quality and technical issues in course content. Mentor course authors to improve the learning experience from their courses. Develop curriculum for general learning, certifications, and customer-specific training requirements.",
       "highlights": [
-        "Directed the planning and guided operations for the most cost-effective segment of the Pluralsight content library.",
-        "Increased data author NPS by 7%, reduced time to data course production by 17%, and increased throughput of author contracts by 22% through tractible data-driven processes of curriculum planning.",
-        "Developed systems to support data-driven role and skill planning, including application of natural language processing and machine learning.",
-        "Developed in-house data literacy curriculum for Content teams."
+        "Direct planning and operations for the most cost-effective segment of the Pluralsight content library.",
+        "Grow data author NPS by 7%, reduced time to data course production by 17%, and increased throughput of author contracts by 22% through tractible data-driven processes of curriculum planning.",
+        "Support data-driven role and skill planning using web scraping, data mining, natural language processing, and machine learning.",
+        "Develop in-house data literacy curriculum for Content teams."
       ]
     },
     {
@@ -55,7 +55,7 @@
 
       "summary": "Design and sales of custom crochet pieces that incorporate electronics, biosensors, programming, and mathematics.",
       "highlights": [
-        "Developed ChainOneTurn(tm) software to translate images into filet and colorwork crochet patterns."
+        "Create the ChainOneTurn application to translate images into filet and colorwork crochet patterns."
       ]
     },
     {
@@ -66,8 +66,8 @@
 
       "summary": "Provide contracted software engineering, data engineering, and project management services across highly regulated industries, including gaming, defense, and education.",
       "highlights": [
-        "Reduced expenses of a large school district by 1.2 million dollars by implementing a cloud-based answer sheet processing system, allowing the district to use inexpensive commodity scanners instead of expensive proprietary scanners.",
-        "Developed the open source p2f framework, which Microsoft now includes as part of the code base for PowerShell and Azure Cloud Shell. (https://github.com/PowerShell/SHiPS/blob/development/docs/Design.md)"
+        "Reduce expenses of a large school district by 1.2 million dollars by implementing a cloud-based answer sheet processing system, allowing the district to use inexpensive commodity scanners.",
+        "Release the open source p2f framework, which Microsoft now includes as part of the code base for PowerShell and Azure Cloud Shell. (https://github.com/PowerShell/SHiPS/blob/development/docs/Design.md)"
       ]
     },
     {
@@ -76,10 +76,10 @@
       "website": "http://pokertek.com",
       "startDate": "2005-09-01",
       "endDate": "2010-02-01",
-      "summary": "Implement software and services to support automated poker tables and rooms. Research and development. Acting SCM, build master, and Scrum master.",
+      "summary": "Implemented software and services to support automated poker tables and rooms. Research and development. Acting SCM, build master, and Scrum master.",
       "highlights": [
         "Reduced time and cost of regulatory approval cycles through implementation of data-driven documentation and static code analysis systems.",
-        "Implemented enterprise-wide application security and file integrity systems, including line-of-sight and monitoring of real-time status.",
+        "Developed enterprise-wide application security and file integrity systems, including line-of-sight and monitoring of real-time status.",
         "Increased automated functional testing coverage to 80% of observed human behavior by developing a domain-specific language for describing poker room activity."
       ]
     },
@@ -89,10 +89,10 @@
       "website": "",
       "startDate": "2002-07-01",
       "endDate": "2005-09-01",
-      "summary": "Integrate systems across various education platforms and architectures. Develop SAML-based federated identity service.",
+      "summary": "Integrated systems across various education platforms and architectures. Created a SAML-based identity federation service.",
       "highlights": [
-        "Reduced support incidents by 37% by implementing an audit system to log changes to key database entities.",
-        "Implemented line-of-sight into data integration systems to support SLAs with external vendors."
+        "Eliminated 37% of all support incidents through application of automated data audits.",
+        "Implemented line-of-sight into data integration systems to support 99.9% uptime SLAs with external vendors."
       ]
     },
     {
@@ -101,9 +101,9 @@
       "website": "",
       "startDate": "2000-12-01",
       "endDate": "2002-07-01",
-      "summary": "Develop browser-based communication and collaboration software.",
+      "summary": "Developed browser-based communication and collaboration software.",
       "highlights": [
-        "Increased developer productivity by an average of 4.2 hours a week by automating software component documentation efforts.",
+        "Added 4.2 hours of average productivity per developer per week by automating software component documentation efforts.",
         "Reduced response time for support incidents by 15 minutes through centralized real-time logging of field incidents."
       ]
     },
@@ -113,11 +113,11 @@
       "website": "http://bro.com",
       "startDate": "1997-12-01",
       "endDate": "2000-01-01",
-      "summary": "Develop Internet-aware application components to support industry-leading optical engineering software.",
+      "summary": "Created Internet-aware application components to support industry-leading optical engineering software.",
       "highlights": [
-        "Increased support team indicent processing capacity by 26% using Internet-enabled application support modules.",
-        "Increased website traffic by 112% though the application of data-driven behavioral techniques.",
-        "Maintained Secret clearance."
+        "Improved resolution rate of support team by 26% using Internet-enabled application support modules.",
+        "Increased website traffic by 112% though the application of data-driven behavior analysis.",
+        "Maintained a Secret clearance."
       ]
     }
   ],
@@ -166,7 +166,7 @@
     },
     {
       "institution": "Trinity University",
-      "area": "Psychology",
+      "area": "Cognitive Psychology",
       "studyType": "Bachelors",
       "startDate": "1991-08-01",
       "endDate": "1995-05-01",
@@ -325,7 +325,7 @@
   ],
   "skills": [
     {
-      "name": "Data Analytics",
+      "name": "Data Analytics & Visualization",
       "level": "Intermediate",
       "keywords": [
         "Python",
@@ -336,7 +336,9 @@
         "scikit-learn",
         "NLTK",
         "spaCy",
-        "D3"
+        "D3",
+        "Tableau",
+        "Power BI"
       ]
     },
     {
@@ -349,7 +351,9 @@
         "MongoDB",
         "neo4j",
         "SQL",
-        "Cypher"
+        "Cypher",
+        "Knime",
+        "Orange3"
       ]
     },
     {

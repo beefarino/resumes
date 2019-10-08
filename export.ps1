@@ -10,7 +10,7 @@ if( -not $theme ) {
 
 @($theme) | foreach {
   $name = $_;
-  node .\node_modules\resume-cli export --theme=${name}  jim-christopher-${name}.html
+  node .\node_modules\resume-cli export --theme=${name}  ./_local/jim-christopher-${name}.html
 }
 
-ls jim-christopher-${blob}.html | ii;
+ls ./_local/jim-christopher-${blob}.html | ii;
