@@ -81,12 +81,12 @@
               <div class="date">
                 {{#if startDate}}
                 <span class="startDate">
-                  {{startDate}}
+                  {{yearOf startDate}}
                 </span>
                 {{/if}}
                 {{#if endDate}}
                 <span class="endDate">
-                  - {{endDate}}
+                  - {{yearOf endDate}}
                 </span>
                 {{else}}
                 <span class="endDate">
@@ -107,7 +107,6 @@
           </div>
           {{#if highlights.length}}
             <div class="highlights">
-            <span class="label">Highlights</span>
               <ul>
                 {{#each highlights}}
                 <li>{{.}}</li>
@@ -139,12 +138,12 @@
               <div class="date">
                 {{#if startDate}}
                 <span class="startDate">
-                  {{startDate}}
+                  {{yearOf startDate}}
                 </span>
                 {{/if}}
                 {{#if endDate}}
                 <span class="endDate">
-                  - {{endDate}}
+                  - {{yearOf endDate}}
                 </span>
                 {{else}}
                 <span class="endDate">
@@ -165,7 +164,6 @@
           </div>
           {{#if highlights.length}}
             <div class="highlights">
-            <span class="label">Highlights</span>
               <ul>
                 {{#each highlights}}
                 <li>{{.}}</li>
@@ -200,22 +198,6 @@
               {{studyType}}
             </div>
             {{/if}}
-            <div class="date">
-              {{#if startDate}}
-              <span class="startDate">
-                {{startDate}}
-              </span>
-              {{/if}}
-              {{#if endDate}}
-              <span class="endDate">
-                - {{endDate}}
-              </span>
-              {{else}}
-              <span class="endDate">
-                - Present
-              </span>
-              {{/if}}
-            </div>
 
             {{#if gpa}}
             <div class="gpa">
