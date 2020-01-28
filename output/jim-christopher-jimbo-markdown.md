@@ -1,7 +1,7 @@
 
 # Jim Christopher
 
-<img src="https://mvp.microsoft.com/en-us/PublicProfile/Photo/4032573"
+<img src="res/profile.jpg"
      alt="Ruggedly Handsome Profile Picture"
      width="100" height="100" />
 
@@ -10,11 +10,11 @@
 Email: [jim.christopher@gmail.com](mailto:jim.christopher@gmail.com)  
 Website: [http://beefycode.com](http://beefycode.com)  
 Phone: 980.322.9231  
-
-
-
-
-
+Address: 2104 Mondo Ln  
+City: Indian Trail  
+Postal Code: NC 28079  
+Country: US  
+Country: North Carolina  
 
 ## Profiles
 
@@ -214,7 +214,7 @@ Magazine article outlining how to extend the windows scripting environment with 
 
 * Intermediate in Data Analytics &amp; Visualization (Python, SQL, pandas, notebooks, statistics, scikit-learn, NLTK, spaCy, D3, Tableau, Power BI)
 * Intermediate in Data Engineering (PostgreSQL, SQL Server, MariaDB, MongoDB, neo4j, SQL, Cypher, Knime, Orange3)
-* Advanced in Software Development (Python, SQL, C#, C++, Javascript, git)
+* Advanced in Software Development (Python, SQL, C#, .NET, C++, Javascript, git)
 * Intermediate in Web Development (HTML, CSS, Javascript, D3)
 * Advanced in Scripting &amp; Automation (PowerShell, Python, Javascript, Automation Design, API Design and Development)
 

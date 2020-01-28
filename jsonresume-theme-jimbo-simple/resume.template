@@ -64,7 +64,7 @@
 
       {{#if resume.work.length}}
       <div id="work" class="">
-        <div class="heading">Experience</div>
+        <div class="heading">Experience &amp; Outcomes</div>
         {{#each resume.work}}
         <div class="item">
           <div class="overview">

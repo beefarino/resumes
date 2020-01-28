@@ -140,6 +140,7 @@ blockquote {
 
 .details {
   padding-left: 10px;
+  padding-top: 2px;
   border-left-style: solid;
   border-left-width: 2px;
   border-left-color: #335b93;
