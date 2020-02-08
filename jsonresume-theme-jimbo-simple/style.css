@@ -201,18 +201,20 @@ blockquote {
   .contact,
   .profiles,
   .overview,
+  .overviewTitle,
   .highlights,
+  .highlightsTitle
   .education .item,
   .interests,
   .references {
     width: 45%;
   }
 
-  .profiles, .overview, .skills .item, .interests, .education .item:nth-child(even) {
+  .profiles, .overview, .overviewTitle, .skills .item, .interests, .education .item:nth-child(even) {
     float: left;
   }
 
-  .contact, .highlights, .references, .education .item:nth-child(odd) {
+  .contact, .highlights, .highlightsTitle, .references, .education .item:nth-child(odd) {
     float: right;
   }
 

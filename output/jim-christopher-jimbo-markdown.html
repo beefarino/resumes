@@ -57,18 +57,18 @@ Provide contracted software engineering, data engineering, and project managemen
 ##### 2005-09-01 - 2010-02-01
 
 * Reduced time and cost of regulatory approval cycles through implementation of data-driven documentation and static code analysis systems.
-* Developed enterprise-wide application security and file integrity systems, including line-of-sight and monitoring of real-time status.
-* Increased automated functional testing coverage to 80% of observed human behavior by developing a domain-specific language for describing poker room activity.
+* Designed and developed enterprise application security and file integrity systems, including line-of-sight and monitoring of real-time status in accordance with regulatory demands.
+* Increased automated functional testing coverage to 80% of observed human behavior using a domain-specific language for describing poker room activity.
 
-Implemented software and services to support automated poker tables and rooms. Research and development. Acting SCM, build master, and Scrum master.
+Implemented software and services to support automated poker tables and poker rooms. Research and development. SCM, build master, and Scrum master.
 
 ### Senior Integration Engineer, LearningStation, Inc
 ##### 2002-07-01 - 2005-09-01
 
-* Eliminated 37% of all support incidents through application of automated data audits.
+* Eliminated 37% of all support incidents through automated data audits.
 * Implemented line-of-sight into data integration systems to support 99.9% uptime SLAs with external vendors.
 
-Integrated systems across various education platforms and architectures. Created a SAML-based identity federation service.
+Integrated systems across various education platforms and architectures. Created and managed a SAML-based identity federation service.
 
 ### Software Developer, Convey Systems, Inc
 ##### 2000-12-01 - 2002-07-01
