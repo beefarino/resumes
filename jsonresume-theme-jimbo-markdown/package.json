@@ -31,7 +31,7 @@
   },
   "bundleDependencies": false,
   "dependencies": {
-    "handlebars": "^2.0.0"
+    "handlebars": "^4.5.3"
   },
   "deprecated": false,
   "description": "Basic Markdown theme for JSON Resume",
