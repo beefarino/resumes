@@ -35,9 +35,38 @@
   "work": [
     {
       "company": "Pluralsight",
+      "position": "Senior Director of Learning Sciences",
+      "website": "https://www.pluralsight.com",
+      "startDate": "2020-11-15",
+
+      "summary": "Lead a tactical team of designers, analysts, and data scientists to promote learning best-practices in Pluralsight learning experiences. Construct data signals to instrument cognitive and teaching concepts in content. Embed with product teams to advocate for learner personas.",
+      "highlights": [
+        "Close $5M in revenue through white-glove service aligning learning with business outcomes for enterprise customers.",
+        "Raise profit by $200,000 per year using GPT-3 technologies to replace error-ridden manual content indexing tasks.",
+        "Develop in-house Learning Science literacy curriculum for product, technology, and content production staff.",
+        "Automate data pipelines and reporting to support analysts and data scientists."
+      ]
+    },
+    {
+      "company": "Jim Writes Books",
+      "position": "Owner / Author",
+      "website": "https://www.jim-christopher.com",
+      "startDate": "2020-11-10",
+
+      "summary": "Write and self-publish novels. Build a list of readers and subscribers. Market and promote my work and others.",
+      "highlights": [
+        "Publish four novels in two years.",
+        "Win first place in the Bookfest awards (2022 best supernatural thriller)",
+        "Finalist in the 2020 American Fiction Awards",
+        "Automate data pipelines to enable business dashboards to track subscriber growth, marketing, costs, works in progress, etc."
+      ]
+    },
+    {
+      "company": "Pluralsight",
       "position": "Director of Curriculum",
       "website": "https://www.pluralsight.com",
       "startDate": "2014-11-01",
+      "endDate": "2020-11-15",
 
       "summary": "Forecast Data Professional library needs and identify authors appropriate to fill these needs. Curate course proposals and author auditions. Resolve quality and technical issues in course content. Mentor course authors to improve the learning experience from their courses. Develop curriculum for general learning, certifications, and customer-specific training requirements.",
       "highlights": [
@@ -177,6 +206,30 @@
   ],
   "awards": [
     {
+      "title": "First Place - Supernatural Thriller Category",
+      "date": "2022-04-01",
+      "awarder": "Bookfest",
+      "summary": "Award for my novel Sick as our Secrets."
+    },
+    {
+      "title": "Second Place - Psychological Thriller",
+      "date": "2022-04-01",
+      "awarder": "Bookfest",
+      "summary": "Award for my novel Sick as our Secrets."
+    },
+    {
+      "title": "Third Place - Mystery and Thriller",
+      "date": "2022-04-01",
+      "awarder": "Bookfest",
+      "summary": "Award for my novel Sick as our Secrets."
+    },
+    {
+      "title": "Finalist",
+      "date": "2021-04-01",
+      "awarder": "American Fiction Awards",
+      "summary": "Award for my debut novel Season of Waiting."
+    },
+    {
       "title": "MVP, PowerShell",
       "date": "2011-04-01",
       "awarder": "Microsoft",
@@ -196,6 +249,34 @@
     }
   ],
   "publications": [
+    {
+      "name": "Gradient Descent",
+      "publisher": "Jim Writes Books",
+      "releaseDate": "2022-12-30",
+      "website": "https://go.jclnk.com/gd",
+      "summary": "Science Fiction: two women tangle with black holes, quantum physics, and institutional misogyny. All to save a dog that already died."
+    },
+    {
+      "name": "Killdeer",
+      "publisher": "Jim Writes Books",
+      "releaseDate": "2022-7-10",
+      "website": "https://go.jclnk.com/killdeer",
+      "summary": "Thriller: a recovering addict is forced to navigate the San Antonio drug economy to get money to save his father."
+    },
+    {
+      "name": "Sick as our Secrets",
+      "publisher": "Jim Writes Books",
+      "releaseDate": "2022-1-17",
+      "website": "https://go.jclnk.com/saos",
+      "summary": "Supernatural Thriller: a fugitive must choose to save himself or his family as supernatural forces erupt on a ranch in the Texas hill country."
+    },
+    {
+      "name": "Season of Waiting",
+      "publisher": "Jim Writes Books",
+      "releaseDate": "2020-11-17",
+      "website": "https://go.jclnk.com/sow",
+      "summary": "Psychological Thriller: a dying man changes his end-of-life plans when an omnipotent voice offers hope, and a deadly purpose."
+    },
     {
       "name": "Application Instrumentation using Windows Performance Counters",
       "publisher": "Pluralsight",
@@ -346,6 +427,7 @@
       "level": "Intermediate",
       "keywords": [
         "PostgreSQL",
+        "BigQuery",
         "SQL Server",
         "MariaDB",
         "MongoDB",
@@ -383,6 +465,7 @@
       "name": "Scripting & Automation",
       "level": "Advanced",
       "keywords": [
+        "No/Low-code Automation Platforms",
         "PowerShell",
         "Python",
         "Javascript",

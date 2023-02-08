@@ -28,8 +28,28 @@ Forward-thinking software and data engineer with 22 years of professional experi
 
 ## Work
 
+### Senior Director of Learning Sciences, [Pluralsight](https://www.pluralsight.com)
+##### 2020-11-15 
+
+* Close $5M in revenue through white-glove service aligning learning with business outcomes for enterprise customers.
+* Raise profit by $200,000 per year using GPT-3 technologies to replace error-ridden manual content indexing tasks.
+* Develop in-house Learning Science literacy curriculum for product, technology, and content production staff.
+* Automate data pipelines and reporting to support analysts and data scientists.
+
+Lead a tactical team of designers, analysts, and data scientists to promote learning best-practices in Pluralsight learning experiences. Construct data signals to instrument cognitive and teaching concepts in content. Embed with product teams to advocate for learner personas.
+
+### Owner / Author, [Jim Writes Books](https://www.jim-christopher.com)
+##### 2020-11-10 
+
+* Publish four novels in two years.
+* Win first place in the Bookfest awards (2022 best supernatural thriller)
+* Finalist in the 2020 American Fiction Awards
+* Automate data pipelines to enable business dashboards to track subscriber growth, marketing, costs, works in progress, etc.
+
+Write and self-publish novels. Build a list of readers and subscribers. Market and promote my work and others.
+
 ### Director of Curriculum, [Pluralsight](https://www.pluralsight.com)
-##### 2014-11-01 
+##### 2014-11-01 - 2020-11-15
 
 * Direct planning and operations for the most cost-effective segment of the Pluralsight content library.
 * Grow data author NPS by 7%, reduced time to data course production by 17%, and increased throughput of author contracts by 22% through tractible data-driven processes of curriculum planning.
@@ -122,6 +142,22 @@ GPA: 3.7
 
 ## Awards
 
+### First Place - Supernatural Thriller Category from Bookfest on 2022-04-01
+
+Award for my novel Sick as our Secrets.
+
+### Second Place - Psychological Thriller from Bookfest on 2022-04-01
+
+Award for my novel Sick as our Secrets.
+
+### Third Place - Mystery and Thriller from Bookfest on 2022-04-01
+
+Award for my novel Sick as our Secrets.
+
+### Finalist from American Fiction Awards on 2021-04-01
+
+Award for my debut novel Season of Waiting.
+
 ### MVP, PowerShell from Microsoft on 2011-04-01
 
 Seven year PowerShell MVP.
@@ -136,6 +172,22 @@ Student-selected recognition of outstanding faculty members.
 
 
 ## Publications
+
+### [Gradient Descent - Jim Writes Books](https://go.jclnk.com/gd)
+
+Science Fiction: two women tangle with black holes, quantum physics, and institutional misogyny. All to save a dog that already died.
+
+### [Killdeer - Jim Writes Books](https://go.jclnk.com/killdeer)
+
+Thriller: a recovering addict is forced to navigate the San Antonio drug economy to get money to save his father.
+
+### [Sick as our Secrets - Jim Writes Books](https://go.jclnk.com/saos)
+
+Supernatural Thriller: a fugitive must choose to save himself or his family as supernatural forces erupt on a ranch in the Texas hill country.
+
+### [Season of Waiting - Jim Writes Books](https://go.jclnk.com/sow)
+
+Psychological Thriller: a dying man changes his end-of-life plans when an omnipotent voice offers hope, and a deadly purpose.
 
 ### [Application Instrumentation using Windows Performance Counters - Pluralsight](https://app.pluralsight.com/library/courses/application-instrumentation-using-performance-counters)
 
@@ -213,10 +265,10 @@ Magazine article outlining how to extend the windows scripting environment with 
 ## Skills
 
 * Intermediate in Data Analytics &amp; Visualization (Python, SQL, pandas, notebooks, statistics, scikit-learn, NLTK, spaCy, D3, Tableau, Power BI)
-* Intermediate in Data Engineering (PostgreSQL, SQL Server, MariaDB, MongoDB, neo4j, SQL, Cypher, Knime, Orange3)
+* Intermediate in Data Engineering (PostgreSQL, BigQuery, SQL Server, MariaDB, MongoDB, neo4j, SQL, Cypher, Knime, Orange3)
 * Advanced in Software Development (Python, SQL, C#, .NET, C++, Javascript, git)
 * Intermediate in Web Development (HTML, CSS, Javascript, D3)
-* Advanced in Scripting &amp; Automation (PowerShell, Python, Javascript, Automation Design, API Design and Development)
+* Advanced in Scripting &amp; Automation (No/Low-code Automation Platforms, PowerShell, Python, Javascript, Automation Design, API Design and Development)
 
 ## Languages
 
